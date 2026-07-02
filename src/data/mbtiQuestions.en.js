@@ -80,19 +80,14 @@ export function calcScores(answers) {
     const secondPole = secondPoles[dim];
 
     let firstScore = 0;
-    let secondScore = 0;
     let count = 0;
 
     for (const q of questions) {
-      if (q.dim === dim) {
+      if (q.dim === dim && q.side === firstPole) {
         const val = answers[q.id] || 0;
         if (val > 0) {
           count++;
-          if (q.side === firstPole) {
-            firstScore += val;
-          } else if (q.side === secondPole) {
-            secondScore += val;
-          }
+          firstScore += val;
         }
       }
     }

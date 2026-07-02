@@ -46,7 +46,7 @@ export default function ResultPage() {
         <div className="px-5 -mt-5">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
             <h3 className="text-sm font-semibold text-gray-800 mb-4 text-center">4-Dimension Analysis</h3>
-            <RadarChart scores={dimScores} />
+            <RadarChart scores={dimScores} dimensions={DIMENSIONS} />
             <div className="mt-5 space-y-3">
               {Object.entries(DIMENSIONS).map(([key, dim]) => (
                 <div key={key}>

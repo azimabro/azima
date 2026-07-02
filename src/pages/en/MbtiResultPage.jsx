@@ -4,10 +4,10 @@ import mbtiTypes from '../../data/mbtiTypes.en';
 
 // Dimension display config
 const DIM_CONFIG = [
-  { key: 'EI', label: 'Energy Direction', left: { letter: 'E', label: '外向 E', desc: 'Energized by external world' }, right: { letter: 'I', label: '内向 I', desc: 'Energized by inner world' }, color: '#3b82f6' },
-  { key: 'SN', label: 'Information Processing', left: { letter: 'S', label: '感觉 S', desc: 'Focuses on concrete facts' }, right: { letter: 'N', label: '直觉 N', desc: 'Focuses on abstract patterns' }, color: '#10b981' },
-  { key: 'TF', label: 'Decision Making', left: { letter: 'T', label: '思考 T', desc: 'Decides by logic and objectivity' }, right: { letter: 'F', label: '情感 F', desc: 'Decides by values and people impact' }, color: '#f59e0b' },
-  { key: 'JP', label: 'Lifestyle Approach', left: { letter: 'J', label: '判断 J', desc: 'Prefers planning and certainty' }, right: { letter: 'P', label: '感知 P', desc: 'Prefers flexibility and openness' }, color: '#8b5cf6' },
+  { key: 'EI', label: 'Energy Direction', left: { letter: 'E', label: 'Extravert E', desc: 'Energized by external world' }, right: { letter: 'I', label: 'Introvert I', desc: 'Energized by inner world' }, color: '#3b82f6' },
+  { key: 'SN', label: 'Information Processing', left: { letter: 'S', label: 'Sensing S', desc: 'Focuses on concrete facts' }, right: { letter: 'N', label: 'Intuition N', desc: 'Focuses on abstract patterns' }, color: '#10b981' },
+  { key: 'TF', label: 'Decision Making', left: { letter: 'T', label: 'Thinking T', desc: 'Decides by logic and objectivity' }, right: { letter: 'F', label: 'Feeling F', desc: 'Decides by values and people impact' }, color: '#f59e0b' },
+  { key: 'JP', label: 'Lifestyle Approach', left: { letter: 'J', label: 'Judging J', desc: 'Prefers planning and certainty' }, right: { letter: 'P', label: 'Perceiving P', desc: 'Prefers flexibility and openness' }, color: '#8b5cf6' },
 ];
 
 export default function MbtiResultPage() {
@@ -16,7 +16,7 @@ export default function MbtiResultPage() {
   const answers = location.state?.answers || {};
 
   if (Object.keys(answers).length === 0) {
-    navigate('/mbti/test', { replace: true });
+    navigate('/en/mbti/test', { replace: true });
     return null;
   }
 
@@ -25,18 +25,18 @@ export default function MbtiResultPage() {
   const typeData = mbtiTypes[typeCode] || {
     name: typeCode,
     emoji: '🧩',
-    summary: '你拥有独特的性格组合。',
-    strengths: '根据你的回答分析得出的优势。',
-    careers: '适合多种职业方向。',
+    summary: 'You have a unique personality combination.',
+    strengths: 'Strengths derived from your responses.',
+    careers: 'Suited to a variety of career paths.',
     famous: '',
   };
 
   const handleShare = () => {
     const text = `My MBTI type is ${typeCode} ${typeData.name}！Find out yours!`;
     if (navigator.share) {
-      navigator.share({ title: 'MBTI 16型人格测试', text, url: window.location.href }).catch(() => {});
+      navigator.share({ title: 'MBTI Personality Test', text, url: window.location.href }).catch(() => {});
     } else {
-      navigator.clipboard.writeText(text + ' https://haltsp.com/mbti').then(() => alert('Link copied! Share with a friend.'));
+      navigator.clipboard.writeText(text + ' https://haltsp.com/en/mbti').then(() => alert('Link copied! Share with a friend.'));
     }
   };
 
@@ -133,7 +133,7 @@ export default function MbtiResultPage() {
             </ul>
             <button
               className="w-full py-3.5 rounded-xl bg-primary text-white font-semibold text-lg active:scale-[0.98] transition-transform shadow-lg shadow-primary/25"
-              onClick={() => navigate('/mbti/report', { state: { answers } })}
+              onClick={() => navigate('/en/mbti/report', { state: { answers } })}
             >
               View My Full Report →
             </button>
@@ -150,7 +150,7 @@ export default function MbtiResultPage() {
             📤 Share Result
           </button>
           <button
-            onClick={() => navigate('/mbti/test')}
+            onClick={() => navigate('/en/mbti/test')}
             className="flex-1 py-3 rounded-xl border border-gray-200 text-gray-600 font-medium text-sm active:scale-[0.98] transition-transform"
           >
             Retake Test

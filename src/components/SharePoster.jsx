@@ -46,12 +46,19 @@ export default function SharePoster({ totalScore, maxScore, level, dimScores, la
     tagline: isEn ? 'HSP Self-Test · Free · 3 min' : 'HSP自测 · 免费 · 3分钟',
   };
 
-  const dims = [
-    { key: 'emotional', name: '情绪', icon: '💙', score: dimScores.emotional, color: '#7c5cbf' },
-    { key: 'sensory', name: '感官', icon: '💜', score: dimScores.sensory, color: '#f59e0b' },
-    { key: 'social', name: '社交', icon: '💚', score: dimScores.social, color: '#0ea5e9' },
-    { key: 'aesthetic', name: '审美', icon: '🧡', score: dimScores.aesthetic, color: '#ec4899' },
-  ];
+  const dims = isEn
+    ? [
+        { key: 'emotional', name: 'Emotional', icon: '💙', score: dimScores.emotional, color: '#7c5cbf' },
+        { key: 'sensory', name: 'Sensory', icon: '💜', score: dimScores.sensory, color: '#f59e0b' },
+        { key: 'social', name: 'Social', icon: '💚', score: dimScores.social, color: '#0ea5e9' },
+        { key: 'aesthetic', name: 'Aesthetic', icon: '🧡', score: dimScores.aesthetic, color: '#ec4899' },
+      ]
+    : [
+        { key: 'emotional', name: '情绪', icon: '💙', score: dimScores.emotional, color: '#7c5cbf' },
+        { key: 'sensory', name: '感官', icon: '💜', score: dimScores.sensory, color: '#f59e0b' },
+        { key: 'social', name: '社交', icon: '💚', score: dimScores.social, color: '#0ea5e9' },
+        { key: 'aesthetic', name: '审美', icon: '🧡', score: dimScores.aesthetic, color: '#ec4899' },
+      ];
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import { DIMENSIONS } from '../data/questions';
+import { DIMENSIONS as DEFAULT_DIMENSIONS } from '../data/questions';
 
 const DIM_KEYS = ['emotional', 'sensory', 'social', 'aesthetic'];
 const SIZE = 360;
@@ -15,7 +15,8 @@ function polarToCartesian(cx, cy, r, angleDeg) {
   };
 }
 
-export default function RadarChart({ scores }) {
+export default function RadarChart({ scores, dimensions }) {
+  const DIMENSIONS = dimensions || DEFAULT_DIMENSIONS;
   const angleStep = 360 / DIM_KEYS.length;
 
   // Build polygon points

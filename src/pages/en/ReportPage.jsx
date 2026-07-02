@@ -53,7 +53,7 @@ export default function ReportPage() {
         </div></div>
 
         {/* Section 2: Radar */}
-        <div className="px-5 mb-4"><div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5"><SectionTitle icon="🎯">4-Dimension Radar</SectionTitle><RadarChart scores={dimScores} /><p className="text-xs text-gray-400 text-center mt-2">Higher = more sensitive (percentile)</p></div></div>
+        <div className="px-5 mb-4"><div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5"><SectionTitle icon="🎯">4-Dimension Radar</SectionTitle><RadarChart scores={dimScores} dimensions={DIMENSIONS} /><p className="text-xs text-gray-400 text-center mt-2">Higher = more sensitive (percentile)</p></div></div>
 
         {/* Section 3: Dimension Deep Dives */}
         <div className="px-5 mb-4"><div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5"><SectionTitle icon="🔬">Dimension Deep Dives</SectionTitle><p className="text-xs text-gray-400 mb-5 leading-relaxed">Personalized interpretations based on your scores in each dimension.</p>

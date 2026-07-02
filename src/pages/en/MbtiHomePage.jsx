@@ -92,6 +92,40 @@ export default function MbtiHomePage() {
           </div>
         </div>
 
+        <div className="mt-6 space-y-3">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider pt-2 text-center">Featured Articles</h2>
+          <Link to="/en/mbti/blog/mbti-overview" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">📖</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">What Is the MBTI 16 Personality Test?</h3>
+                <p className="text-xs text-gray-400 mt-0.5">A complete beginner's guide to Myers-Briggs</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/en/mbti/blog/mbti-popular-types" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🏆</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">The 4 Most Talked-About MBTI Types</h3>
+                <p className="text-xs text-gray-400 mt-0.5">INFJ, INFP, ENFP, INTJ — do you fit one of these?</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/en/mbti/blog/mbti-vs-hsp" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🔬</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">MBTI vs HSP: Can You Be Both?</h3>
+                <p className="text-xs text-gray-400 mt-0.5">How personality types and sensory sensitivity relate</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+        </div>
+
         {/* Cross-link to HSP */}
         <div className="mt-6">
           <Link to="/en" className="block bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-4 border border-primary/10 active:scale-[0.99] transition-all">

@@ -34,7 +34,17 @@ export default function MbtiReportPage() {
   const scores = calcScores(answers);
   const typeCode = getType(scores);
   const typeData = mbtiTypes[typeCode] || {};
-  const reportData = mbtiReports[typeCode] || {};
+  const rawReport = mbtiReports[typeCode] || {};
+
+  // Normalize: support both old and new linter-generated data formats
+  const reportData = {
+    overview: rawReport.overview || rawReport.summary || typeData.summary || '',
+    strengths: rawReport.strengths || (rawReport.coreTraits || []).map(t => t.content || t.label || ''),
+    weaknesses: rawReport.weaknesses || [],
+    career: rawReport.career || (rawReport.advice && rawReport.advice.career) || '',
+    relationships: rawReport.relationships || (rawReport.advice && rawReport.advice.love) || '',
+    growth: rawReport.growth || (rawReport.advice && rawReport.advice.growth) || '',
+  };
 
   const today = new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 

@@ -80,19 +80,14 @@ export function calcScores(answers) {
     const secondPole = secondPoles[dim];
 
     let firstScore = 0;
-    let secondScore = 0;
     let count = 0;
 
     for (const q of questions) {
-      if (q.dim === dim) {
+      if (q.dim === dim && q.side === firstPole) {
         const val = answers[q.id] || 0;
         if (val > 0) {
           count++;
-          if (q.side === firstPole) {
-            firstScore += val;
-          } else if (q.side === secondPole) {
-            secondScore += val;
-          }
+          firstScore += val;
         }
       }
     }
@@ -100,7 +95,6 @@ export function calcScores(answers) {
     if (count > 0) {
       const minScore = count * 1;
       const maxScore = count * 5;
-      // Normalize the first pole score to 0-100
       const normalized = Math.round(((firstScore - minScore) / (maxScore - minScore)) * 100);
       scores[dim] = Math.max(0, Math.min(100, normalized));
     } else {

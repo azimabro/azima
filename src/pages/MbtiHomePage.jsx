@@ -99,7 +99,7 @@ export default function MbtiHomePage() {
 
         <div className="mt-6 space-y-3">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider pt-2 text-center">精选文章</h2>
-          <Link to="/blog/mbti-overview" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+          <Link to="/mbti/blog/mbti-overview" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
             <div className="flex items-center gap-3">
               <span className="text-2xl">📖</span>
               <div className="flex-1">
@@ -109,7 +109,7 @@ export default function MbtiHomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
-          <Link to="/blog/mbti-popular-types" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+          <Link to="/mbti/blog/mbti-popular-types" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🏆</span>
               <div className="flex-1">
@@ -119,7 +119,7 @@ export default function MbtiHomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
-          <Link to="/blog/mbti-vs-hsp" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+          <Link to="/mbti/blog/mbti-vs-hsp" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🔬</span>
               <div className="flex-1">

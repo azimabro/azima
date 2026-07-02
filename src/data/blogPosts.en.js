@@ -57,7 +57,7 @@ const blogPostsEn = [
         icon: '✍️',
         title: 'A Final Word',
         content: [
-          'I didn\'t write this article after skimming Wikipedia. I know what it\'s like — growing up hearing "you\'re too sensitive," "you overthink everything," "why are you so fragile." And eventually you start believing it: something must be wrong with me.',
+          'I didn\'t write this article after browsing online. I know what it\'s like — growing up hearing "you\'re too sensitive," "you overthink everything," "why are you so fragile." And eventually you start believing it: something must be wrong with me.',
           'Until you figure out — you\'re just part of the 15%.',
           'This article is for anyone still wondering if there\'s something wrong with them. If it resonated, share it with that friend who always gets told they\'re "too sensitive." That message might matter more than you know.',
         ],
@@ -324,6 +324,17 @@ const blogPostsEn = [
         cta: true,
         footer: 'This is your first step toward working with yourself instead of against yourself.',
       },
+    ],
+  },
+  { slug: 'mbti-vs-hsp', title: 'MBTI vs. HSP: Can You Be Both?', description: 'Do these two tests conflict? Clear explanation.', date: '2026-06-26', readTime: '5 min read', heroIcon: '🔄',
+    sections: [
+      { icon: '🔄', title: 'A Common Confusion', content: ['People often take both tests and wonder if they conflict. Answer: they measure completely different things.'], footer: '' },
+      { icon: '📐', title: 'The Core Difference', content: [], subsections: [
+        { title: 'MBTI = Cognitive Preferences', text: 'How you prefer to process info and make decisions. These are preferences you can choose differently.' },
+        { title: 'HSP = Nervous System Sensitivity', text: 'How sensitive your nervous system is to stimuli. These are neurobiological traits, not preferences.' },
+        { title: 'In one sentence', text: 'MBTI is your software. HSP is your hardware. Same software, different hardware.' },
+      ], footer: '' },
+      { icon: '✅', title: 'Take Both for Fuller Self-Knowledge', content: ['They are complementary, not competing.'], cta: true, footer: '' },
     ],
   },
 ];
