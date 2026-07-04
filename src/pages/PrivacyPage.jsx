@@ -5,7 +5,7 @@ export default function PrivacyPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-gray-900">隐私政策</h1>
-          <p className="text-sm text-gray-400 mt-2">最后更新于 2024 年 6 月</p>
+          <p className="text-sm text-gray-400 mt-2">最后更新于 2026 年 7 月</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 space-y-6 text-sm text-gray-700 leading-relaxed">
@@ -96,7 +96,7 @@ export default function PrivacyPage() {
               如果您对本隐私政策有任何疑问或建议，请通过以下邮箱与我们联系：
             </p>
             <p className="mt-2">
-              📧 <a href="mailto:457674237@qq.com" className="text-primary underline">457674237@qq.com</a>
+              📧 <a href="mailto:privacy@haltsp.com" className="text-primary underline">privacy@haltsp.com</a>
             </p>
           </section>
         </div>

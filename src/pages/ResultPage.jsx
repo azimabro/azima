@@ -53,7 +53,7 @@ export default function ResultPage() {
         {/* Score Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">
           <div className="text-5xl mb-3">{emoji}</div>
-          <h1 className={`text-2xl font-bold mb-1 ${color.replace('text-', 'text-white')}`}>
+          <h1 className="text-2xl font-bold mb-1 text-white">
             {level}
           </h1>
           <div className="text-4xl font-extrabold my-3 text-white">
@@ -105,12 +105,12 @@ export default function ResultPage() {
               <p className="text-xs text-gray-500 leading-relaxed mb-2">
                 <strong>最强维度：{DIMENSIONS[strongestDim[0]].icon} {DIMENSIONS[strongestDim[0]].name}（{strongestDim[1]}%）</strong>
                 <br />
-                {dimInterpretations[strongestDim[0]].high}
+                {dimInterpretations[strongestDim[0]][strongestDim[1] >= 65 ? 'high' : strongestDim[1] >= 40 ? 'mid' : 'low']}
               </p>
               <p className="text-xs text-gray-400 leading-relaxed">
                 <strong>相对较弱：{DIMENSIONS[weakestDim[0]].icon} {DIMENSIONS[weakestDim[0]].name}（{weakestDim[1]}%）</strong>
                 <br />
-                {dimInterpretations[weakestDim[0]][weakestDim[1] < 50 ? 'low' : 'mid']}
+                {dimInterpretations[weakestDim[0]][weakestDim[1] >= 65 ? 'high' : weakestDim[1] >= 40 ? 'mid' : 'low']}
               </p>
             </div>
           </div>

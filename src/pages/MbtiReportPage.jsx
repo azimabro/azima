@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { calcScores, getType, questions } from '../data/mbtiQuestions';
+import { calcScores, getType } from '../data/mbtiQuestions';
 import mbtiTypes from '../data/mbtiTypes';
 import mbtiReports from '../data/mbtiReports';
 import AdBanner from '../components/AdBanner';

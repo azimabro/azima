@@ -6,7 +6,6 @@ import ProgressBar from '../../components/ProgressBar';
 export default function MbtiTestPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [direction, setDirection] = useState('forward');
   const navigate = useNavigate();
 
   const question = questions[currentIndex];
@@ -20,13 +19,11 @@ export default function MbtiTestPage() {
       navigate('/en/mbti/result', { state: { answers } });
       return;
     }
-    setDirection('forward');
     setCurrentIndex((i) => i + 1);
   }, [hasAnswer, isLast, currentIndex, navigate, answers]);
 
   const goPrev = useCallback(() => {
     if (currentIndex === 0) return;
-    setDirection('back');
     setCurrentIndex((i) => i - 1);
   }, [currentIndex]);
 
@@ -38,7 +35,6 @@ export default function MbtiTestPage() {
         if (isLast) {
           navigate('/en/mbti/result', { state: { answers: updated } });
         } else {
-          setDirection('forward');
           setCurrentIndex((i) => i + 1);
         }
       }, 350);

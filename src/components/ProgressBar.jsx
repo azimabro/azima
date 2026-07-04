@@ -1,5 +1,5 @@
 export default function ProgressBar({ current, total }) {
-  const pct = Math.round((current / total) * 100);
+  const pct = total > 0 ? Math.round((current / total) * 100) : 0;
 
   return (
     <div className="w-full">

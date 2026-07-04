@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // Eager-loaded for first paint
 import HomePage from './pages/HomePage';
@@ -36,6 +37,7 @@ function Lazy({ children }) { return <Suspense fallback={<Loading />}>{children}
 export default function App() {
   return (
     <BrowserRouter>
+      <ErrorBoundary>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/test" element={<TestPage />} />
@@ -62,6 +64,7 @@ export default function App() {
         <Route path="/en/mbti/report" element={<Lazy><EnMbtiReportPage /></Lazy>} />
         <Route path="/en/mbti/blog/:slug" element={<Lazy><EnMbtiBlogPostPage /></Lazy>} />
       </Routes>
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }

@@ -52,13 +52,7 @@ export default function TestPage() {
           </span>
         </div>
         <div className="w-full">
-          <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs text-gray-400">{answeredCount} / {questions.length}</span>
-            <span className="text-xs text-gray-400">{Math.round((answeredCount / questions.length) * 100)}%</span>
-          </div>
-          <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div className="h-full bg-primary rounded-full transition-all duration-500 ease-out" style={{ width: `${Math.round((answeredCount / questions.length) * 100)}%` }} />
-          </div>
+          <ProgressBar current={answeredCount} total={questions.length} />
         </div>
       </div>
 

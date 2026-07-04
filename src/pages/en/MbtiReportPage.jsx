@@ -3,7 +3,7 @@ import { calcScores, getType } from '../../data/mbtiQuestions.en';
 import mbtiTypes from '../../data/mbtiTypes.en';
 import mbtiReports from '../../data/mbtiReports.en';
 import AdBanner from '../../components/AdBanner';
-import SeoHead, { Breadcrumb } from '../../components/SeoHead';
+import SeoHead from '../../components/SeoHead';
 
 const DIM_CONFIG = [
   { key: 'EI', label: 'Energy Direction', left: { letter: 'E', label: 'Extravert' }, right: { letter: 'I', label: 'Introvert' }, color: '#3b82f6' },
