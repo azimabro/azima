@@ -9,6 +9,7 @@ import {
   LIFESTYLE_ADVICE,
 } from '../data/reportContent';
 import RadarChart from '../components/RadarChart';
+import SeoHead from '../components/SeoHead';
 
 function getLevelKey(totalScore) {
   if (totalScore >= 80) return 'high';
@@ -46,6 +47,14 @@ export default function ReportPage() {
   const maxScore = 23 * 5;
   const dimScores = calcDimensions(answers);
   const { level, emoji, color } = getScoreLevel(totalScore);
+
+  const reportSeoHead = (
+    <SeoHead
+      title="HSP深度个人报告 | 高敏感人格测试"
+      description={`总分${totalScore}/${maxScore}，等级${level}。包含四维度深度解读、敏感模式分析、职业生涯建议、30天敏感力提升计划。`}
+      canonical="https://haltsp.com/report"
+    />
+  );
   const levelKey = getLevelKey(totalScore);
   const levelData = LEVEL_INTERPRETATIONS[levelKey];
   const patterns = getPatternAnalysis(dimScores);
@@ -59,7 +68,9 @@ export default function ReportPage() {
   const today = new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
-    <div className="min-h-screen bg-gray-50 page-enter">
+    <>
+      {reportSeoHead}
+      <div className="min-h-screen bg-gray-50 page-enter">
       <div className="max-w-lg mx-auto w-full">
         {/* Sticky Header */}
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">
@@ -394,6 +405,7 @@ export default function ReportPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

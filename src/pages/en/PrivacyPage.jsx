@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
+import SeoHead from '../../components/SeoHead';
 
 export default function PrivacyPage() {
   const lastUpdated = '2026-06-29';
 
   return (
     <div className="min-h-screen bg-gray-50 page-enter">
+      <SeoHead
+        title="Privacy Policy | HSP Test"
+        description="Privacy policy for the HSP self-test. All test responses processed locally in your browser — no personal data uploaded to any server. GDPR and CCPA compliant."
+        canonical="https://haltsp.com/en/privacy"
+      />
       <div className="max-w-lg mx-auto w-full">
         {/* Header */}
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SeoHead, { FAQSchema } from '../../components/SeoHead';
 
 const sections = [
   { id: 'what-is-hsp', icon: '🦋', title: 'What is a Highly Sensitive Person (HSP)?', content: `Highly Sensitive Person (HSP) is a term coined by Dr. Elaine Aron in the 1990s. It is not a disorder or illness — it's an innate nervous system trait found in approximately 15-20% of the population. This ratio appears consistently across humans and over 100 other animal species.
@@ -52,6 +53,12 @@ What careers suit HSPs? Creative fields, helping professions (counseling, teachi
 export default function ArticlesPage() {
   return (
     <div className="min-h-screen bg-gray-50 page-enter">
+      <SeoHead
+        title="HSP Knowledge Base | Understand High Sensitivity | Articles & FAQ"
+        description="Comprehensive HSP knowledge: what is HSP, common traits, self-care guide, HSP vs introvert, MBTI vs HSP comparison. Free online sensitivity test."
+        canonical="https://haltsp.com/en/articles"
+      />
+      <FAQSchema questions={sections.find(s => s.id === 'faq')} />
       <div className="max-w-lg mx-auto w-full">
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">
           <div className="flex items-center justify-between">

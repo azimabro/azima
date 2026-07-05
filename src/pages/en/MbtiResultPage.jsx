@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { calcScores, getType } from '../../data/mbtiQuestions.en';
 import mbtiTypes from '../../data/mbtiTypes.en';
+import SeoHead from '../../components/SeoHead';
 
 // Dimension display config
 const DIM_CONFIG = [
@@ -42,6 +43,11 @@ export default function MbtiResultPage() {
 
   return (
     <div className="min-h-screen pb-10 page-enter">
+      <SeoHead
+        title={`${typeCode} ${typeData?.name || ''} Result | MBTI Personality Test`}
+        description={`Your MBTI type is ${typeCode} ${typeData?.name || ''}. ${typeData?.summary?.slice(0, 80) || ''}`}
+        canonical="https://haltsp.com/en/mbti/result"
+      />
       <div className="max-w-lg mx-auto w-full">
         {/* Type Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">

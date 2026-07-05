@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../../data/questions.en';
 import { LEVEL_INTERPRETATIONS, DIMENSION_REPORTS, getPatternAnalysis, BOOK_RECOMMENDATIONS, get30DayPlan, LIFESTYLE_ADVICE } from '../../data/reportContent.en';
 import RadarChart from '../../components/RadarChart';
+import SeoHead from '../../components/SeoHead';
 
 function getLevelKey(totalScore) { if (totalScore >= 80) return 'high'; if (totalScore >= 60) return 'midHigh'; if (totalScore >= 40) return 'mid'; return 'low'; }
 function getDimLevel(score) { if (score >= 65) return 'high'; if (score >= 40) return 'mid'; return 'low'; }
@@ -22,6 +23,11 @@ export default function ReportPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 page-enter">
+      <SeoHead
+        title="HSP Deep Personal Report | Highly Sensitive Person Test"
+        description={`Score: ${totalScore}/${maxScore}, Level: ${level}. Deep dive report with 4-dimension analysis, sensitivity patterns, career advice, and 30-day growth plan.`}
+        canonical="https://haltsp.com/en/report"
+      />
       <div className="max-w-lg mx-auto w-full">
         {/* Header */}
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import SeoHead from '../../components/SeoHead';
 
 export default function MbtiHomePage() {
   return (
     <div className="min-h-screen flex flex-col page-enter">
+      <SeoHead
+        title="MBTI Personality Test | Free Online | Discover Your Type"
+        description="Free online MBTI personality test based on Myers-Briggs Type Indicator. 40 questions, 4 dimensions, discover your 16-type personality profile."
+        canonical="https://haltsp.com/en/mbti"
+      />
       {/* Language switcher */}
       <div className="flex justify-end px-5 pt-3 max-w-lg mx-auto w-full">
         <a href="/mbti" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>

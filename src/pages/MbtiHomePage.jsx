@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
+import SeoHead from '../components/SeoHead';
 
 export default function MbtiHomePage() {
   return (
-    <div className="min-h-screen flex flex-col page-enter">
+    <>
+      <SeoHead
+        title="MBTI 16型人格测试 | 免费在线测试 | 发现你的人格类型"
+        description="基于Myers-Briggs Type Indicator理论改编，40题、5级评分、四维度分析。免费在线MBTI人格测试，5分钟发现你的16型人格类型。"
+        canonical="https://haltsp.com/mbti"
+      />
+      <div className="min-h-screen flex flex-col page-enter">
       {/* Top bar: HSP cross-link + Language switcher */}
       <div className="flex justify-between px-5 pt-3 max-w-lg mx-auto w-full">
         <Link to="/" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">
@@ -132,5 +139,6 @@ export default function MbtiHomePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../../data/questions.en';
 import RadarChart from '../../components/RadarChart';
 import SharePoster from '../../components/SharePoster';
+import SeoHead from '../../components/SeoHead';
 
 export default function ResultPage() {
   const location = useLocation();
@@ -26,6 +27,11 @@ export default function ResultPage() {
 
   return (
     <div className="min-h-screen pb-10 page-enter">
+      <SeoHead
+        title="Your HSP Test Result | Highly Sensitive Person Self-Test"
+        description={`Score: ${totalScore}/${maxScore}, Level: ${level}. View your 4-dimension analysis: Emotional, Sensory, Social, Aesthetic sensitivity.`}
+        canonical="https://haltsp.com/en/result"
+      />
       <div className="max-w-lg mx-auto w-full">
         {/* Score Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">

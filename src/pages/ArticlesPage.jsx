@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SeoHead, { FAQSchema } from '../components/SeoHead';
 
 const sections = [
   {
@@ -142,9 +143,43 @@ const sections = [
   },
 ];
 
+const faq = [
+  {
+    question: '高敏感是病吗？',
+    answer: '不是。HSP 是一种天生的神经系统特质，不是疾病或障碍。它不需要"治疗"。但它确实伴随着一些挑战（如容易过载），这些可以通过自我管理策略来应对。',
+  },
+  {
+    question: '高敏感和内向有什么区别？',
+    answer: '内向是关于"社交能量来源"的（内向者独处充电，外向者社交充电）。高敏感是关于"信息处理深度"的。大约 70% 的高敏感者是内向者，但约 30% 是高敏感外向者——他们喜欢社交，但容易被过度刺激。',
+  },
+  {
+    question: '高敏感和 ADHD / 自闭症有什么区别？',
+    answer: '这三个有一些表面相似之处（容易被过度刺激），但本质不同。HSP 没有注意力缺陷或社交理解障碍，只是信息处理更深。如果你怀疑自己可能有 ADHD 或自闭症，请咨询专业医生。',
+  },
+  {
+    question: '可以"变得不敏感"吗？',
+    answer: '不能，也不应该。敏感度是神经系统的硬件配置，不是可以卸载的软件。目标不是"变钝"，而是学会管理过度刺激，同时利用敏感的优势。',
+  },
+  {
+    question: '如何向别人解释我是高敏感者？',
+    answer: '"我的神经系统处理信息的方式比大多数人更深。这意味着我更容易被噪音/人多/情绪影响而感到疲惫，但也意味着我更能理解你的感受，更能注意到细节。这不是我\'想太多\'，是我的大脑就是这样工作的。"',
+  },
+  {
+    question: '高敏感者适合什么工作？',
+    answer: '创意类（写作、设计、艺术）、助人类（咨询、教育、医疗）、需要深度专注的（研究、编程、分析）、灵活自主的（自由职业、远程工作）。避免嘈杂的开放式办公室、高压销售、频繁出差的工作。',
+  },
+];
+
 export default function ArticlesPage() {
   return (
-    <div className="min-h-screen bg-gray-50 page-enter">
+    <>
+      <SeoHead
+        title="HSP知识库 | 了解高敏感人格 | 文章与FAQ"
+        description="全面了解高敏感人格(HSP)：什么是HSP、常见表现、自我照顾指南、HSP vs 内向、MBTI vs HSP对比。免费在线测试你的敏感度。"
+        canonical="https://haltsp.com/articles"
+      />
+      <FAQSchema questions={faq} />
+      <div className="min-h-screen bg-gray-50 page-enter">
       <div className="max-w-lg mx-auto w-full">
         {/* Header */}
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">
@@ -239,5 +274,6 @@ export default function ArticlesPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

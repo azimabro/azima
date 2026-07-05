@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import SeoHead from '../../components/SeoHead';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col page-enter">
+      <SeoHead
+        title="HSP Self-Test | Free Online Test | Discover Your Sensitivity Score"
+        description="Based on Dr. Elaine Aron's HSP Scale. 23 questions, 5-point scale, 4-dimension analysis. Take the free HSP test and understand your sensitivity profile."
+        canonical="https://haltsp.com/en"
+      />
       <div className="flex justify-end px-5 pt-3 max-w-lg mx-auto w-full">
         <a href="/" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>
       </div>

@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { questions, OPTIONS } from '../data/mbtiQuestions';
 import ProgressBar from '../components/ProgressBar';
+import SeoHead from '../components/SeoHead';
 
 export default function MbtiTestPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +46,14 @@ export default function MbtiTestPage() {
   const allAnswered = Object.keys(answers).length === questions.length;
 
   return (
-    <div className="min-h-screen flex flex-col px-5 py-6 max-w-lg mx-auto w-full">
+    <>
+      <SeoHead
+        title="MBTI人格测试 | 40题在线量表 | 16型人格测试"
+        description="40题专业MBTI人格测试，基于荣格心理类型理论。5级评分，四维度分析你的人格偏好：E/I、S/N、T/F、J/P。"
+        canonical="https://haltsp.com/mbti/test"
+      />
+      <h1 className="text-sm font-semibold text-gray-800 text-center">MBTI 16 型人格测试</h1>
+      <div className="min-h-screen flex flex-col px-5 py-6 max-w-lg mx-auto w-full">
       {/* Language + Header */}
       <div className="flex justify-end mb-2">
         <a href="/en/mbti/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 English</a>
@@ -132,5 +140,6 @@ export default function MbtiTestPage() {
         {hasAnswer ? '已选择，自动跳转下一题' : '请选择一个最符合你的选项'}
       </p>
     </div>
+    </>
   );
 }

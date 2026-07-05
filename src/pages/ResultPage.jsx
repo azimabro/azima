@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../data/questions';
 import RadarChart from '../components/RadarChart';
 import SharePoster from '../components/SharePoster';
+import SeoHead from '../components/SeoHead';
 
 export default function ResultPage() {
   const location = useLocation();
@@ -18,6 +19,15 @@ export default function ResultPage() {
   const maxScore = 23 * 5; // 115
   const dimScores = calcDimensions(answers);
   const { level, emoji, color } = getScoreLevel(totalScore);
+
+  // SeoHead definition using computed values (placed in a variable for use in JSX)
+  const resultSeoHead = (
+    <SeoHead
+      title="你的HSP自测结果 | 高敏感人格测试"
+      description={`总分${totalScore}/${maxScore}，等级${level}。查看四维度分析：情绪敏感、感官敏感、社交敏感、审美敏感。了解你的高敏感人格画像。`}
+      canonical="https://haltsp.com/result"
+    />
+  );
 
   // Find strongest dimension
   const strongestDim = Object.entries(dimScores).sort((a, b) => b[1] - a[1])[0];
@@ -48,7 +58,9 @@ export default function ResultPage() {
   };
 
   return (
-    <div className="min-h-screen pb-10 page-enter">
+    <>
+      {resultSeoHead}
+      <div className="min-h-screen pb-10 page-enter">
       <div className="max-w-lg mx-auto w-full">
         {/* Score Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">
@@ -161,5 +173,6 @@ export default function ResultPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

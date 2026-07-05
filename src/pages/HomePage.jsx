@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import SeoHead from '../components/SeoHead';
 
 export default function HomePage() {
   useEffect(() => {
@@ -11,6 +12,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col page-enter">
+      <SeoHead
+        title="高敏感人格(HSP)自测 | 免费在线测试 | 3分钟了解你的敏感度"
+        description="基于Elaine Aron博士量表汉化，23题专业HSP高敏感人格自测。免费在线测试，即时出结果，四维度分析你的敏感类型。"
+        canonical="https://haltsp.com"
+      />
       <div className="flex justify-between px-5 pt-3 max-w-lg mx-auto w-full">
         <Link to="/mbti" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🧩 16型人格</Link>
         <a href="/en" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</a>

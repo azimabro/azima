@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { calcScores, getType } from '../data/mbtiQuestions';
 import mbtiTypes from '../data/mbtiTypes';
+import SeoHead from '../components/SeoHead';
 
 // Dimension display config
 const DIM_CONFIG = [
@@ -31,6 +32,14 @@ export default function MbtiResultPage() {
     famous: '',
   };
 
+  const mbtiResultSeoHead = (
+    <SeoHead
+      title={`${typeCode} ${typeData?.name || ''} 测试结果 | MBTI 16型人格测试`}
+      description={`你的MBTI人格类型是 ${typeCode} ${typeData?.name || ''}——${typeData?.summary?.slice(0, 80) || ''}`}
+      canonical="https://haltsp.com/mbti/result"
+    />
+  );
+
   const handleShare = () => {
     const text = `我的MBTI人格类型是 ${typeCode} ${typeData.name}！来测测你是什么类型？`;
     if (navigator.share) {
@@ -41,7 +50,9 @@ export default function MbtiResultPage() {
   };
 
   return (
-    <div className="min-h-screen pb-10 page-enter">
+    <>
+      {mbtiResultSeoHead}
+      <div className="min-h-screen pb-10 page-enter">
       <div className="max-w-lg mx-auto w-full">
         {/* Type Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">
@@ -158,5 +169,6 @@ export default function MbtiResultPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

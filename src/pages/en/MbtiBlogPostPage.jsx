@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import mbtiBlogPosts from '../../data/mbtiBlogPosts.en';
+import SeoHead, { Breadcrumb } from '../../components/SeoHead';
 
 function BlogSection({ section }) {
   return (
@@ -55,8 +56,19 @@ export default function MbtiBlogPostPage() {
 
   useEffect(() => {
     if (post) {
-      document.title = post.title;
       window.scrollTo(0, 0);
+      const enLink = document.createElement('link');
+      enLink.rel = 'alternate'; enLink.hreflang = 'en';
+      enLink.href = `https://haltsp.com/en/mbti/blog/${post.slug}`;
+      document.head.appendChild(enLink);
+      const zhLink = document.createElement('link');
+      zhLink.rel = 'alternate'; zhLink.hreflang = 'zh';
+      zhLink.href = `https://haltsp.com/mbti/blog/${post.slug}`;
+      document.head.appendChild(zhLink);
+      return () => {
+        if (enLink.parentNode) enLink.parentNode.removeChild(enLink);
+        if (zhLink.parentNode) zhLink.parentNode.removeChild(zhLink);
+      };
     }
   }, [post]);
 
@@ -65,9 +77,29 @@ export default function MbtiBlogPostPage() {
   }
 
   const otherPosts = mbtiBlogPosts.filter((p) => p.slug !== slug);
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    url: `https://haltsp.com/en/mbti/blog/${post.slug}`,
+    author: { '@type': 'Organization', name: 'HSP Test' },
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 page-enter">
+      <SeoHead
+        title={post.title}
+        description={post.description}
+        canonical={`https://haltsp.com/en/mbti/blog/${post.slug}`}
+        schema={articleSchema}
+      />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://haltsp.com/en' },
+        { name: 'MBTI Test', url: 'https://haltsp.com/en/mbti' },
+        { name: post.title, url: `https://haltsp.com/en/mbti/blog/${post.slug}` },
+      ]} />
       <div className="max-w-lg mx-auto w-full">
         {/* Header */}
         <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { questions, OPTIONS } from '../../data/questions.en';
 import ProgressBar from '../../components/ProgressBar';
+import SeoHead from '../../components/SeoHead';
 
 export default function TestPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,6 +34,12 @@ export default function TestPage() {
 
   return (
     <div className="min-h-screen flex flex-col px-5 py-6 max-w-lg mx-auto w-full">
+      <SeoHead
+        title="HSP Test | 23 Questions | Highly Sensitive Person Self-Assessment"
+        description="Take the HSP self-test based on Dr. Elaine Aron's validated scale. 23 questions, instant results, all data processed locally in your browser."
+        canonical="https://haltsp.com/en/test"
+      />
+      <h1 className="text-sm font-semibold text-gray-800 text-center">HSP Self-Assessment Test</h1>
       <div className="flex justify-end mb-2">
         <a href="/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>
       </div>

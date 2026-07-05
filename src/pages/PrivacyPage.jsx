@@ -1,6 +1,14 @@
+import SeoHead from '../components/SeoHead';
+
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-gray-50 page-enter">
+    <>
+      <SeoHead
+        title="隐私政策 | HSP自测"
+        description="HSP高敏感人格自测隐私政策。了解我们如何收集、使用和保护你的个人信息。所有测试数据在本地处理，不上传服务器。"
+        canonical="https://haltsp.com/privacy"
+      />
+      <div className="min-h-screen bg-gray-50 page-enter">
       <div className="max-w-lg mx-auto w-full px-5 py-8">
         {/* Header */}
         <div className="text-center mb-8">
@@ -107,5 +115,6 @@ export default function PrivacyPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
