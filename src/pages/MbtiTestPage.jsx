@@ -59,7 +59,7 @@ export default function MbtiTestPage() {
         description="40题专业MBTI人格测试，基于荣格心理类型理论。5级评分，四维度分析你的人格偏好：E/I、S/N、T/F、J/P。"
         canonical="https://haltsp.com/mbti/test"
       />
-      <h1 className="text-sm font-semibold text-gray-800 text-center">MBTI 16 型人格测试</h1>
+      <h1 className="sr-only">MBTI 16 型人格测试</h1>
       <div className="min-h-screen flex flex-col px-5 py-6 max-w-lg mx-auto w-full">
       {/* Language + Header */}
       <div className="flex justify-end mb-2">

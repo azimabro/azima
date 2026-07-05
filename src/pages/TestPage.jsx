@@ -62,7 +62,7 @@ export default function TestPage() {
         description="基于Elaine Aron博士原版量表汉化，23题、5级评分、四维度分析。花3分钟了解你的敏感度分数，全部数据在本地处理。"
         canonical="https://haltsp.com/test"
       />
-      <h1 className="text-sm font-semibold text-gray-800 text-center">HSP 高敏感人格自测</h1>
+      <h1 className="sr-only">HSP 高敏感人格自测</h1>
       {/* Language + Header */}
       <div className="flex justify-end mb-2">
         <a href="/en/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 English</a>

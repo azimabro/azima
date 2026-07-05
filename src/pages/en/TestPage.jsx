@@ -46,7 +46,7 @@ export default function TestPage() {
         description="Take the HSP self-test based on Dr. Elaine Aron's validated scale. 23 questions, instant results, all data processed locally in your browser."
         canonical="https://haltsp.com/en/test"
       />
-      <h1 className="text-sm font-semibold text-gray-800 text-center">HSP Self-Assessment Test</h1>
+      <h1 className="sr-only">HSP Self-Assessment Test</h1>
       <div className="flex justify-end mb-2">
         <a href="/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>
       </div>
