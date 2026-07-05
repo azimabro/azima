@@ -47,7 +47,25 @@ HSP vs. ADHD / autism? Surface similarities exist (overstimulation susceptibilit
 
 Can I become "less sensitive"? No — and you shouldn't want to. Sensitivity is your hardware, not software you can uninstall. The goal is managing overstimulation while leveraging the strengths.
 
-What careers suit HSPs? Creative fields, helping professions (counseling, teaching, healthcare), deep-focus work (research, programming, analysis), and flexible/remote roles. Avoid open-plan offices, high-pressure sales, and constant-travel jobs.` },
+What careers suit HSPs? Creative fields, helping professions (counseling, teaching, healthcare), deep-focus work (research, programming, analysis), and flexible/remote roles. Avoid open-plan offices, high-pressure sales, and constant-travel jobs.
+
+How to explain HSP to others? "My nervous system processes information more deeply than most people's. This means noise, crowds, and emotions affect me more intensely, but it also means I'm more attuned to your feelings and to subtle details. It's not overthinking — it's how my brain is wired."
+
+Is HSP genetic? Yes. Research shows a hereditary component — nervous system sensitivity tends to run in families. Brain imaging studies also confirm HSPs show broader activation when processing information. That said, environment matters too: childhood experiences and upbringing shape how you relate to your sensitivity.
+
+HSP and anxiety — what's the connection? HSP is not an anxiety disorder, but HSPs are more vulnerable to anxiety in high-stress environments. The mechanism: a more sensitive nervous system → easier overstimulation → chronic overload can trigger anxiety. The key insight: sensitivity itself is not the problem — lack of good self-management strategies is. Prevention through energy management works better than treating burnout after the fact.
+
+How do HSPs handle conflict? HSPs naturally avoid conflict because it hits harder emotionally. Practical tips: (1) Don't engage when overstimulated — calm down first. (2) Use "I feel..." statements rather than blaming. (3) Set boundaries early, not after you've hit your limit. (4) Accept that not every conflict needs immediate resolution — asking for time to process is valid.
+
+Sleep tips for HSPs? HSPs are more affected by sensory input (light, sound, bedding texture) at bedtime. How to improve: (1) Blackout curtains + white noise machine for a sensory-safe sleep zone. (2) No screens 1 hour before bed — blue light plus information overload is a double sleep-killer. (3) A consistent wind-down ritual (foot bath, meditation, soft music). (4) High-quality cotton or silk bedding to minimize tactile irritation.
+
+What kind of partner suits an HSP? Three key traits: (1) Respects your need for alone time — won't take "I need space" as rejection. (2) Communicates gently — no sarcasm, cold shoulders, or explosive arguments. (3) Emotionally stable — you shouldn't always be the caretaker. Introverts and fellow HSPs often understand each other deeply, but extroverts bring complementary strengths.
+
+My child might be HSP — what should I do? First, sensitivity is not a problem to fix. Core principles: (1) Accept their emotional intensity — don't dismiss tears with "stop crying, it's nothing." (2) Give them quiet recovery time — don't pack activities right after school. (3) Preview changes in advance — HSP kids react strongly to sudden shifts. (4) Celebrate their sensitivity's gifts: empathy, observation skills, creativity.
+
+How can HSPs survive the workplace? (1) Choose remote or hybrid work if possible — escape the open-office sensory assault. (2) Use noise-canceling headphones to create focus blocks. (3) Do deep work in the morning when energy is highest. (4) Build 5-10 minute buffers between meetings. (5) Frame your HSP traits as professional strengths — attention to detail, risk anticipation, people insight — and let your manager know.
+
+What are the strengths of being an HSP? (1) Deep empathy — you feel what others leave unspoken, making you a better partner, friend, and listener. (2) Detail awareness — you catch what others miss, leading to fewer errors. (3) Deep thinking — you don't settle for surface answers, producing better decisions. (4) Aesthetic sensitivity — you have a natural eye for quality and beauty. (5) Risk anticipation — you spot problems before they escalate. The goal is not becoming less sensitive — it's managing overstimulation while fully using these gifts.` },
 ];
 
 export default function ArticlesPage() {
