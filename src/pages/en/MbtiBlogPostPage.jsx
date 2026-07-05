@@ -72,6 +72,13 @@ export default function MbtiBlogPostPage() {
     }
   }, [post]);
 
+  useEffect(() => {
+    const lang = (navigator.language || '').toLowerCase();
+    if (lang.startsWith('zh')) {
+      window.location.replace(`/mbti/blog/${slug}`);
+    }
+  }, [slug]);
+
   if (!post) {
     return <Navigate to="/en/mbti" replace />;
   }
@@ -114,7 +121,7 @@ export default function MbtiBlogPostPage() {
               Back to MBTI
             </Link>
             <Link to="/en/mbti" className="text-sm font-semibold text-gray-700">MBTI Test</Link>
-            <div className="w-10" />
+            <a href={`/mbti/blog/${slug}`} className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 中文</a>
           </div>
         </div>
 

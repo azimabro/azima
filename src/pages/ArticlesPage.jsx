@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead, { FAQSchema } from '../components/SeoHead';
 
@@ -203,6 +204,13 @@ const faq = [
 ];
 
 export default function ArticlesPage() {
+  useEffect(() => {
+    const lang = (navigator.language || '').toLowerCase();
+    if (!lang.startsWith('zh')) {
+      window.location.replace('/en/articles');
+    }
+  }, []);
+
   return (
     <>
       <SeoHead
@@ -225,6 +233,7 @@ export default function ArticlesPage() {
               </svg>
               返回首页
             </Link>
+            <a href="/en/articles" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</a>
             <span className="text-sm font-semibold text-gray-700">HSP 知识库</span>
             <div className="w-10" />
           </div>

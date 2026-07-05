@@ -1,7 +1,15 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead from '../components/SeoHead';
 
 export default function MbtiHomePage() {
+  useEffect(() => {
+    const lang = (navigator.language || '').toLowerCase();
+    if (!lang.startsWith('zh')) {
+      window.location.replace('/en/mbti');
+    }
+  }, []);
+
   return (
     <>
       <SeoHead
