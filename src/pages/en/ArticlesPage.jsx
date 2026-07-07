@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead, { FAQSchema } from '../../components/SeoHead';
 
@@ -70,13 +69,6 @@ What are the strengths of being an HSP? (1) Deep empathy — you feel what other
 ];
 
 export default function ArticlesPage() {
-  useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (lang.startsWith('zh')) {
-      window.location.replace('/articles');
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-gray-50 page-enter">
       <SeoHead

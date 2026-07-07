@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../data/questions';
 import {
@@ -42,6 +43,8 @@ export default function ReportPage() {
     navigate('/test', { replace: true });
     return null;
   }
+
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const totalScore = calcTotalScore(answers);
   const maxScore = 23 * 5;
@@ -391,6 +394,12 @@ export default function ReportPage() {
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
             📤 分享给朋友
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="w-full py-3 rounded-xl bg-white border border-gray-200 text-gray-500 font-medium text-sm active:scale-[0.98] transition-transform mt-3"
+          >
+            返回首页
           </button>
           <p className="text-xs text-gray-300 leading-relaxed">
             本报告基于 Elaine Aron 博士的高敏感人格量表（Highly Sensitive Person Scale）汉化改编。

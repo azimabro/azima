@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead, { FAQSchema } from '../components/SeoHead';
 
@@ -204,13 +203,6 @@ const faq = [
 ];
 
 export default function ArticlesPage() {
-  useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (!lang.startsWith('zh')) {
-      window.location.replace('/en/articles');
-    }
-  }, []);
-
   return (
     <>
       <SeoHead

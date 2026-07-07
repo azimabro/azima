@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../../data/questions.en';
 import { LEVEL_INTERPRETATIONS, DIMENSION_REPORTS, getPatternAnalysis, BOOK_RECOMMENDATIONS, get30DayPlan, LIFESTYLE_ADVICE } from '../../data/reportContent.en';
@@ -14,6 +15,8 @@ export default function ReportPage() {
   const location = useLocation(); const navigate = useNavigate();
   const answers = location.state?.answers || {};
   if (Object.keys(answers).length === 0) { navigate('/en/test', { replace: true }); return null; }
+
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const totalScore = calcTotalScore(answers); const maxScore = 23 * 5; const dimScores = calcDimensions(answers);
   const { level, emoji } = getScoreLevel(totalScore); const levelKey = getLevelKey(totalScore);
@@ -119,6 +122,12 @@ export default function ReportPage() {
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
             📤 Share with a Friend
+          </button>
+          <button
+            onClick={() => navigate('/en')}
+            className="w-full py-3 rounded-xl bg-white border border-gray-200 text-gray-500 font-medium text-sm active:scale-[0.98] transition-transform mt-3"
+          >
+            Back to Home
           </button>
           <p className="text-xs text-gray-300 leading-relaxed">Based on Dr. Elaine Aron's Highly Sensitive Person Scale. This report is for self-understanding and is not a clinical diagnosis.<br />If you need professional help, please consult a licensed therapist.</p>
           <p className="text-xs text-gray-300 mt-4">{today} · HSP Deep Personal Report</p>

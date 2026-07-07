@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { calcScores, getType } from '../data/mbtiQuestions';
 import mbtiTypes from '../data/mbtiTypes';
@@ -30,6 +31,8 @@ export default function MbtiReportPage() {
     navigate('/mbti/test', { replace: true });
     return null;
   }
+
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const scores = calcScores(answers);
   const typeCode = getType(scores);

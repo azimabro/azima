@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { questions, OPTIONS } from '../data/mbtiQuestions';
 import ProgressBar from '../components/ProgressBar';
@@ -8,13 +8,6 @@ export default function MbtiTestPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (!lang.startsWith('zh')) {
-      window.location.replace('/en/mbti/test');
-    }
-  }, []);
 
   const question = questions[currentIndex];
   const isLast = currentIndex === questions.length - 1;
