@@ -20,15 +20,6 @@ export default function ResultPage() {
   const dimScores = calcDimensions(answers);
   const { level, emoji, color } = getScoreLevel(totalScore);
 
-  // SeoHead definition using computed values (placed in a variable for use in JSX)
-  const resultSeoHead = (
-    <SeoHead
-      title="你的HSP自测结果 | 高敏感人格测试"
-      description={`总分${totalScore}/${maxScore}，等级${level}。查看四维度分析：情绪敏感、感官敏感、社交敏感、审美敏感。了解你的高敏感人格画像。`}
-      canonical="https://haltsp.com/result"
-    />
-  );
-
   // Find strongest dimension
   const strongestDim = Object.entries(dimScores).sort((a, b) => b[1] - a[1])[0];
   const weakestDim = Object.entries(dimScores).sort((a, b) => a[1] - b[1])[3];
@@ -58,9 +49,12 @@ export default function ResultPage() {
   };
 
   return (
-    <>
-      {resultSeoHead}
-      <div className="min-h-screen pb-10 page-enter">
+    <div className="min-h-screen pb-10 page-enter">
+      <SeoHead
+        title="你的HSP自测结果 | 高敏感人格测试"
+        description={`总分${totalScore}/${maxScore}，等级${level}。查看四维度分析：情绪敏感、感官敏感、社交敏感、审美敏感。了解你的高敏感人格画像。`}
+        canonical="https://haltsp.com/result"
+      />
       <div className="max-w-lg mx-auto w-full">
         {/* Score Banner */}
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-center text-white rounded-b-[2rem] shadow-lg">
@@ -173,6 +167,5 @@ export default function ResultPage() {
         </div>
       </div>
     </div>
-    </>
   );
 }

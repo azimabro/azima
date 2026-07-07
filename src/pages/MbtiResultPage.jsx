@@ -32,14 +32,6 @@ export default function MbtiResultPage() {
     famous: '',
   };
 
-  const mbtiResultSeoHead = (
-    <SeoHead
-      title={`${typeCode} ${typeData?.name || ''} 测试结果 | MBTI 16型人格测试`}
-      description={`你的MBTI人格类型是 ${typeCode} ${typeData?.name || ''}——${typeData?.summary?.slice(0, 80) || ''}`}
-      canonical="https://haltsp.com/mbti/result"
-    />
-  );
-
   const handleShare = () => {
     const text = `我的MBTI人格类型是 ${typeCode} ${typeData.name}！来测测你是什么类型？`;
     if (navigator.share) {
@@ -51,7 +43,11 @@ export default function MbtiResultPage() {
 
   return (
     <>
-      {mbtiResultSeoHead}
+      <SeoHead
+        title={`${typeCode} ${typeData?.name || ''} 测试结果 | MBTI 16型人格测试`}
+        description={`你的MBTI人格类型是 ${typeCode} ${typeData?.name || ''}——${typeData?.summary?.slice(0, 80) || ''}`}
+        canonical="https://haltsp.com/mbti/result"
+      />
       <div className="min-h-screen pb-10 page-enter">
       <div className="max-w-lg mx-auto w-full">
         {/* Type Banner */}

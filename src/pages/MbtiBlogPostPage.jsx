@@ -55,13 +55,6 @@ export default function MbtiBlogPostPage() {
   const post = mbtiBlogPosts.find((p) => p.slug === slug);
 
   useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (!lang.startsWith('zh')) {
-      window.location.replace(`/en/mbti/blog/${slug}`);
-    }
-  }, [slug]);
-
-  useEffect(() => {
     if (post) {
       window.scrollTo(0, 0);
       const enLink = document.createElement('link');
@@ -120,7 +113,7 @@ export default function MbtiBlogPostPage() {
               </svg>
               返回 MBTI
             </Link>
-            <a href={`/en/mbti/blog/${slug}`} className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</a>
+            <div className="w-10" />
             <Link to="/mbti" className="text-sm font-semibold text-gray-700">16 型人格</Link>
             <div className="w-10" />
           </div>

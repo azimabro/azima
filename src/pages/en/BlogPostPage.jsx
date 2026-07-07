@@ -72,13 +72,6 @@ export default function BlogPostPage() {
     }
   }, [post]);
 
-  useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (lang.startsWith('zh')) {
-      window.location.replace(`/blog/${slug}`);
-    }
-  }, [slug]);
-
   if (!post) {
     return <Navigate to="/en/articles" replace />;
   }
@@ -117,7 +110,7 @@ export default function BlogPostPage() {
               Knowledge Base
             </Link>
             <Link to="/en" className="text-sm font-semibold text-gray-700">HSP Test</Link>
-            <a href={`/blog/${slug}`} className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 中文</a>
+            <div className="w-10" />
           </div>
         </div>
 

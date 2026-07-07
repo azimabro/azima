@@ -4,7 +4,7 @@ import SeoHead from '../components/SeoHead';
 
 export default function HomePage() {
   useEffect(() => {
-    const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    const lang = (navigator.language || '').toLowerCase();
     if (!lang.startsWith('zh')) {
       window.location.replace('/en');
     }
