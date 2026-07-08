@@ -4,6 +4,8 @@ import SeoHead from '../components/SeoHead';
 
 export default function HomePage() {
   useEffect(() => {
+    if (sessionStorage.getItem('lang_checked')) return;
+    sessionStorage.setItem('lang_checked', '1');
     try {
       const stored = localStorage.getItem('lang');
       const lang = stored || (navigator.language || '').toLowerCase();
