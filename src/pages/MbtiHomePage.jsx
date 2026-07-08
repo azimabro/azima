@@ -1,15 +1,7 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead from '../components/SeoHead';
 
 export default function MbtiHomePage() {
-  useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
-    if (!lang.startsWith('zh')) {
-      window.location.replace('/en/mbti');
-    }
-  }, []);
-
   return (
     <>
       <SeoHead
@@ -23,9 +15,6 @@ export default function MbtiHomePage() {
         <Link to="/" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">
           ← HSP 自测
         </Link>
-        <a href="/en/mbti" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">
-          🌐 English
-        </a>
       </div>
 
       {/* Hero Section */}
