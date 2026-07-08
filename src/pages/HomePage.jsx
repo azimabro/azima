@@ -4,7 +4,8 @@ import SeoHead from '../components/SeoHead';
 
 export default function HomePage() {
   useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
+    const stored = localStorage.getItem('lang');
+    const lang = stored || (navigator.language || '').toLowerCase();
     if (!lang.startsWith('zh')) {
       window.location.replace('/en');
     }
@@ -19,7 +20,7 @@ export default function HomePage() {
       />
       <div className="flex justify-between px-5 pt-3 max-w-lg mx-auto w-full">
         <Link to="/mbti" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🧩 16型人格</Link>
-        <a href="/en" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</a>
+        <button onClick={() => { localStorage.setItem('lang', 'en'); window.location.href = '/en'; }} className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</button>
       </div>
       {/* Hero Section */}
       <div className="flex-1 flex flex-col justify-center px-5 py-10 max-w-lg mx-auto w-full">

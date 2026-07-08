@@ -4,7 +4,8 @@ import SeoHead from '../../components/SeoHead';
 
 export default function HomePage() {
   useEffect(() => {
-    const lang = (navigator.language || '').toLowerCase();
+    const stored = localStorage.getItem('lang');
+    const lang = stored || (navigator.language || '').toLowerCase();
     if (lang.startsWith('zh')) {
       window.location.replace('/');
     }
@@ -18,7 +19,7 @@ export default function HomePage() {
         canonical="https://haltsp.com/en"
       />
       <div className="flex justify-end px-5 pt-3 max-w-lg mx-auto w-full">
-        <a href="/" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>
+        <button onClick={() => { localStorage.setItem('lang', 'zh'); window.location.href = '/'; }} className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</button>
       </div>
       <div className="flex-1 flex flex-col justify-center px-5 py-10 max-w-lg mx-auto w-full">
         {/* Brand */}
