@@ -225,7 +225,7 @@ export default function ArticlesPage() {
               </svg>
               返回首页
             </Link>
-            <a href="/en/articles" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 English</a>
+            <div className="w-10" />
             <span className="text-sm font-semibold text-gray-700">HSP 知识库</span>
             <div className="w-10" />
           </div>

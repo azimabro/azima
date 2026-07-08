@@ -56,7 +56,7 @@ export default function MbtiTestPage() {
       <div className="min-h-screen flex flex-col px-5 py-6 max-w-lg mx-auto w-full">
       {/* Language + Header */}
       <div className="flex justify-end mb-2">
-        <a href="/en/mbti/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 English</a>
+        <div className="w-10" />
       </div>
       <div className="mb-6">
         <div className="flex items-center justify-between mb-4">

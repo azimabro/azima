@@ -58,7 +58,7 @@ export default function TestPage() {
       <h1 className="sr-only">HSP 高敏感人格自测</h1>
       {/* Language + Header */}
       <div className="flex justify-end mb-2">
-        <a href="/en/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 English</a>
+        <div className="w-10" />
       </div>
       <div className="mb-6">
         <div className="flex items-center justify-between mb-4">

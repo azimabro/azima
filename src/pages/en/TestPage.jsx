@@ -41,7 +41,7 @@ export default function TestPage() {
       />
       <h1 className="sr-only">HSP Self-Assessment Test</h1>
       <div className="flex justify-end mb-2">
-        <a href="/test" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">🌐 中文</a>
+        <div className="w-10" />
       </div>
       <div className="mb-6">
         <div className="flex items-center justify-between mb-4">

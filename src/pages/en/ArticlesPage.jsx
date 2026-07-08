@@ -82,7 +82,7 @@ export default function ArticlesPage() {
           <div className="flex items-center justify-between">
             <Link to="/en" className="text-gray-400 hover:text-gray-600 text-sm flex items-center gap-1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>Home</Link>
             <span className="text-sm font-semibold text-gray-700">HSP Knowledge</span>
-            <a href="/articles" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary">🌐 中文</a>
+            <div className="w-10" />
           </div>
         </div>
         <div className="bg-gradient-to-br from-primary to-primary-dark px-5 pt-8 pb-10 text-white text-center">
