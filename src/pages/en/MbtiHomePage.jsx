@@ -126,6 +126,26 @@ export default function MbtiHomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
+          <Link to="/en/mbti/blog/intj-deep-dive" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🏛️</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">INTJ Deep Dive — The Rarest Type</h3>
+                <p className="text-xs text-gray-400 mt-0.5">What goes on inside the INTJ mind?</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/en/mbti/blog/mbti-conflict-styles" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">⚡</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">How the 16 Types Fight</h3>
+                <p className="text-xs text-gray-400 mt-0.5">Why you can't argue, or explode instantly</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
         </div>
 
         {/* Cross-link to HSP */}

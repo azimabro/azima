@@ -19,7 +19,11 @@
   <url><loc>https://haltsp.com/blog/am-i-too-sensitive</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/blog/hsp-vs-introvert</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/blog/how-to-live-with-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://haltsp.com/blog/mbti-vs-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/blog/mbti-vs-hsp</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/blog/hsp-evolution-history</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/blog/hsp-friendship-guide</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/blog/introvert-vs-social-anxiety-vs-avoidant</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/blog/hsp-holiday-guide</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ========== Chinese MBTI ========== -->
   <url><loc>https://haltsp.com/mbti</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
@@ -27,6 +31,8 @@
   <url><loc>https://haltsp.com/mbti/blog/mbti-overview</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/mbti/blog/mbti-popular-types</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/mbti/blog/mbti-vs-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/mbti/blog/intj-deep-dive</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/mbti/blog/mbti-conflict-styles</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ========== English HSP ========== -->
   <url>
@@ -47,6 +53,10 @@
   <url><loc>https://haltsp.com/en/blog/hsp-vs-introvert</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/en/blog/how-to-live-with-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/en/blog/mbti-vs-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/blog/hsp-evolution-history</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/blog/hsp-friendship-guide</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/blog/introvert-vs-social-anxiety-vs-avoidant</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/blog/hsp-holiday-guide</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ========== English MBTI ========== -->
   <url><loc>https://haltsp.com/en/mbti</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
@@ -54,4 +64,6 @@
   <url><loc>https://haltsp.com/en/mbti/blog/mbti-overview</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/en/mbti/blog/mbti-popular-types</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://haltsp.com/en/mbti/blog/mbti-vs-hsp</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/mbti/blog/intj-deep-dive</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://haltsp.com/en/mbti/blog/mbti-conflict-styles</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

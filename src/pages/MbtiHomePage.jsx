@@ -133,6 +133,26 @@ export default function MbtiHomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
+          <Link to="/mbti/blog/intj-deep-dive" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🏛️</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">INTJ 深度解读——最稀有的人格类型</h3>
+                <p className="text-xs text-gray-400 mt-0.5">脑子里到底在想什么？为什么常被误解为冷漠</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/mbti/blog/mbti-conflict-styles" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">⚡</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">16 型人格的吵架模式</h3>
+                <p className="text-xs text-gray-400 mt-0.5">为什么你们吵不起来，或者一吵就炸</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
