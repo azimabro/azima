@@ -10,6 +10,13 @@ export default function MbtiHomePage() {
         canonical="https://haltsp.com/en/mbti"
       />
 
+      {/* Top bar: HSP cross-link */}
+      <div className="flex justify-start px-5 pt-3 max-w-lg mx-auto w-full">
+        <Link to="/en" className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors">
+          ← HSP Test
+        </Link>
+      </div>
+
       {/* Hero Section */}
       <div className="flex-1 flex flex-col justify-center px-5 py-10 max-w-lg mx-auto w-full">
         {/* Logo / Brand */}
@@ -159,6 +166,13 @@ export default function MbtiHomePage() {
               </div>
               <span className="text-primary/50 text-sm">→</span>
             </div>
+          </Link>
+        </div>
+
+        {/* Back to Home */}
+        <div className="mt-6 text-center">
+          <Link to="/en" className="text-sm text-gray-400 hover:text-gray-500 underline underline-offset-4">
+            Back to Home
           </Link>
         </div>
       </div>

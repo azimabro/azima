@@ -45,7 +45,7 @@ const mbtiBlogPosts = [
     slug: 'intj-deep-dive',
     title: 'INTJ 深度解读——最稀有的人格类型，脑子里到底在想什么？',
     description: 'INTJ 仅占人口 2%。他们战略性、独立、高标准——但也常被误解为冷漠。本文深入解读 INTJ 的思维方式和成长路径。',
-    date: '2026-07-10',
+    date: '2026-07-11',
     readTime: '8 分钟',
     heroIcon: '🏛️',
     sections: [
@@ -195,7 +195,7 @@ const mbtiBlogPosts = [
     slug: 'mbti-conflict-styles',
     title: '16 型人格的吵架模式——为什么你们吵不起来，或者一吵就炸',
     description: '不同 MBTI 类型在冲突中的表现截然不同。了解你和对方的吵架风格，才能找到真正解决问题的沟通方式。',
-    date: '2026-07-10',
+    date: '2026-07-11',
     readTime: '7 分钟',
     heroIcon: '⚡',
     sections: [

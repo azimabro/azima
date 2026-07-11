@@ -154,6 +154,13 @@ export default function MbtiHomePage() {
             </div>
           </Link>
         </div>
+
+        {/* 返回 HSP 首页 */}
+        <div className="mt-6 text-center">
+          <Link to="/" className="text-sm text-gray-400 hover:text-gray-500 underline underline-offset-4">
+            返回 HSP 首页
+          </Link>
+        </div>
       </div>
     </div>
     </>
