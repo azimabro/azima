@@ -197,6 +197,258 @@ const mbtiBlogPostsEn = [
       { icon: '✅', title: 'Take Both for Fuller Self-Knowledge', content: ['They are complementary, not competing.'], cta: true, footer: '' },
     ],
   },
+  {
+    slug: 'infj-deep-dive',
+    title: 'INFJ Deep Dive — Inside the Mind of the Rarest Idealist',
+    description: 'INFJs make up only 1-2% of the population. With uncanny insight, firm values, and deep empathy — they also feel profoundly misunderstood. A complete exploration.',
+    date: '2026-07-11',
+    readTime: '8 min read',
+    heroIcon: '🌿',
+    sections: [
+      {
+        icon: '🌿',
+        title: 'INFJ: The Rarest Type, and the Most Paradoxical',
+        content: [
+          'INFJ stands for Introverted, Intuitive, Feeling, Judging — and at just 1-2% of the population, it\'s the rarest of all sixteen types. Meeting another INFJ can feel like finding someone who speaks a language you thought only you knew.',
+          'The INFJ is a walking paradox. Deeply private, yet drawn to help others. Gentle and warm, yet capable of unbending conviction. A quiet dreamer with a spine of steel. They can read a person in minutes but spend years feeling like no one has read them.',
+          'A few qualities sit at the center of the INFJ:',
+        ],
+        bullets: [
+          { text: 'Uncanny insight into people', desc: ' — they sense motives, moods, and unspoken feelings almost before the other person is aware of them' },
+          { text: 'A deep, guiding sense of purpose', desc: ' — they need their life and work to mean something; without meaning, they wither' },
+          { text: 'Firm inner values', desc: ' — soft on the outside, but immovable on the things they believe are right' },
+          { text: 'A rich, private inner world', desc: ' — an entire universe of thought and feeling that few people ever get to see' },
+        ],
+        footer: 'The INFJ\'s rarity is part of the challenge. When almost no one is wired like you, it\'s easy to spend a lifetime feeling like the exception that doesn\'t quite fit anywhere.',
+      },
+      {
+        icon: '🧠',
+        title: 'The Engine Room: How Ni and Fe Work Together',
+        content: ['The INFJ\'s distinctive way of seeing the world comes from their top two cognitive functions — Introverted Intuition and Extraverted Feeling — working in tandem.'],
+        subsections: [
+          { title: 'Ni — Introverted Intuition (the seer)', text: 'The INFJ\'s dominant function absorbs vast amounts of information and quietly distills it into insight, pattern, and foresight. It\'s the source of the famous INFJ "knowing" — the sense of where a situation or a person is heading, arriving as a conviction rather than a chain of reasoning. Ni is why INFJs are so often right without being able to fully explain how.' },
+          { title: 'Fe — Extraverted Feeling (the heart)', text: 'Their auxiliary function is tuned to other people\'s emotions. Fe reads the room, harmonizes, and cares deeply about how others feel — sometimes so much that the INFJ absorbs the emotional weather around them. It\'s the warmth and empathy that makes people open up to INFJs almost instantly.' },
+          { title: 'The combination', text: 'Ni understands people at the level of pattern and depth; Fe connects with them at the level of emotion. Together they create the INFJ\'s signature gift: seeing straight into someone and genuinely caring about what they see. It\'s also the source of their exhaustion — perceiving that much, and feeling that much, all at once, is heavy.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🌫️',
+        title: 'Why INFJs Feel So Deeply Misunderstood',
+        content: [
+          'Ask an INFJ what they struggle with most, and "feeling misunderstood" tops the list nearly every time. There are real reasons for it.',
+          'They understand others far more easily than others understand them. INFJs read people effortlessly, but their own inner world is so complex, private, and layered that letting someone truly see it feels almost impossible — and rare is the person with the patience to try.',
+          'They also blend in. Because Fe adapts to the people around them, INFJs can seem sociable, agreeable, and easy — a warm surface that hides how much is happening underneath. People take the surface as the whole, and the INFJ is left thinking, "you\'re not seeing even a fraction of me."',
+        ],
+        footer: 'The INFJ paradox: the type most gifted at understanding others is the type most likely to feel unseen. Being understood, for an INFJ, usually requires actively letting people in — not just waiting to be perceived.',
+      },
+      {
+        icon: '💼',
+        title: 'Where INFJs Thrive at Work',
+        content: [
+          'INFJs need work that means something. A high salary in a soulless job will quietly destroy them; modest pay in a role that helps people or advances something they believe in can sustain them for years.',
+          'They tend to flourish in roles that combine depth, purpose, and human impact — and where they can work with some autonomy rather than in constant noise:',
+        ],
+        bullets: [
+          { text: 'Counseling and psychology', desc: ' — their insight and empathy make them natural therapists, coaches, and guides' },
+          { text: 'Writing and the arts', desc: ' — a private, reflective outlet for their rich inner world and their need to say something true' },
+          { text: 'Teaching and mentoring', desc: ' — helping others grow taps directly into their sense of purpose' },
+          { text: 'Mission-driven and nonprofit work', desc: ' — roles where the goal is genuinely helping, not just hitting a number' },
+        ],
+        footer: 'What breaks an INFJ at work is meaninglessness, constant conflict, and relentless social exposure. What they need is purpose, depth, and enough quiet to hear themselves think.',
+      },
+      {
+        icon: '❤️',
+        title: 'INFJ in Friendship and Love',
+        content: ['INFJs love the same way they do everything: deeply, selectively, and all the way in. They don\'t collect people — they choose a few and give them almost everything.'],
+        subsections: [
+          { title: 'As a friend', text: 'INFJs want a handful of profound connections, not a wide circle of acquaintances. They\'re the friend who remembers what you said months ago and asks the question no one else thought to ask. But they have a limit: cross their core values or betray their trust badly enough, and an INFJ can perform the famous "door slam" — cutting someone off completely and finally, because protecting themselves became the only option left.' },
+          { title: 'In love', text: 'INFJs seek a soulmate, not a companion of convenience — someone who wants to know the deep inner world they usually hide. They are devoted, intuitive partners who often sense what you need before you say it. What they long for in return is to be truly seen: a partner patient enough to draw out what they don\'t easily reveal, and safe enough to make the vulnerability worth it.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🔍',
+        title: 'Common Misconceptions About INFJs',
+        content: [],
+        subsections: [
+          { title: '"INFJs are shy pushovers"', text: 'The gentle exterior hides bedrock conviction. On matters of principle, an INFJ is one of the most immovable types alive — softness is not the same as weakness.' },
+          { title: '"INFJs are psychic"', text: 'Their "knowing" isn\'t magic; it\'s Ni rapidly synthesizing thousands of subtle cues into a conclusion faster than conscious reasoning can keep up. It feels like intuition because the steps happen out of sight.' },
+          { title: '"INFJs are always selfless and serene"', text: 'They give a great deal, but they have needs, anger, and limits like anyone. Ignored too long, the calm caretaker can burn out hard — or slam the door.' },
+          { title: '"Everyone is an INFJ"', text: 'Because the type is idealized online, many people mistype as INFJ. The genuine article is genuinely rare — and usually less flattered by the label than quietly relieved to be understood.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🌱',
+        title: 'Growth Advice for INFJs',
+        content: ['The INFJ\'s growth path runs through their own blind spots: over-giving, over-hiding, and living too much in the head.'],
+        bullets: [
+          { text: 'Let people see the real you', desc: ' — being understood requires the risk of revealing, not just the hope of being perceived' },
+          { text: 'Set boundaries before the door-slam', desc: ' — small, early "no"s prevent the buildup that ends in cutting someone off entirely' },
+          { text: 'Tend to your own needs too', desc: ' — you can\'t pour endlessly from a cup you never refill; caring for yourself isn\'t selfishness' },
+          { text: 'Come down from the ideal', desc: ' — your vision of how things should be is a gift, but reality lived imperfectly beats perfection imagined forever' },
+        ],
+        cta: true,
+        footer: 'The mature INFJ keeps the insight and the idealism but adds boundaries, self-care, and the courage to be seen. That\'s when the rarest type stops feeling like an outsider and starts feeling at home in their own depth.',
+      },
+    ],
+  },
+  {
+    slug: 'mbti-love-compatibility',
+    title: 'MBTI Love Compatibility Guide — Which Type Is Your Soulmate?',
+    description: 'Different MBTI types express love in dramatically different ways. Understand your romantic style and discover which pairings tend to work best.',
+    date: '2026-07-11',
+    readTime: '7 min read',
+    heroIcon: '💕',
+    sections: [
+      {
+        icon: '💕',
+        title: 'Why Two People Can Love Each Other and Still Feel Unloved',
+        content: [
+          'Here\'s a heartbreak that has nothing to do with a lack of love: two people care deeply for each other, yet both feel unappreciated. One shows love by solving problems; the other needs words. One craves deep talks; the other shows up through quiet, practical acts. The love is real — the language is different.',
+          'MBTI won\'t tell you who to marry, but it does something genuinely useful: it explains why different people express and receive love in such different ways, and which patterns tend to click or clash. Understanding that can turn "you don\'t love me right" into "oh — you love me in your language, not mine."',
+        ],
+        footer: 'Compatibility isn\'t about finding an identical type. It\'s about understanding how each of you gives and needs love — and being willing to translate.',
+      },
+      {
+        icon: '🧭',
+        title: 'The Dimensions That Shape How You Love',
+        content: ['Each MBTI axis shows up vividly in romance. Knowing where you and a partner sit explains a lot of the friction.'],
+        subsections: [
+          { title: 'E / I — how you recharge together', text: 'Extraverts often want to share experiences, socialize as a couple, and process out loud. Introverts want depth, quiet, and one-on-one time, and need solitude even inside a relationship. Neither is more loving; they simply refill on different fuel.' },
+          { title: 'S / N — how you talk and dream', text: 'Sensors connect through concrete reality, shared activities, and practical care. Intuitives connect through ideas, possibilities, and big-picture conversations. This axis is often the deepest source of "we\'re on different wavelengths."' },
+          { title: 'T / F — how you handle the heart', text: 'Thinkers show love through problem-solving and honesty and may under-express emotion. Feelers show love through emotional attunement and need verbal, felt reassurance. The classic clash: one offers a solution when the other just wanted comfort.' },
+          { title: 'J / P — how you run a shared life', text: 'Judgers want plans, decisions, and structure; Perceivers want spontaneity and open options. Day to day — from vacations to dinner to finances — this quiet difference creates more real-world friction than almost any other.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🎭',
+        title: 'Four Temperaments, Four Ways of Loving',
+        content: ['Grouping the types by temperament reveals four broad love languages — a fast way to understand your own style and a partner\'s.'],
+        subsections: [
+          { title: 'NT Rationals (INTJ, INTP, ENTJ, ENTP) — love as a meeting of minds', text: 'They fall for intelligence and show love through loyalty, growth, and solving problems together. They can struggle to voice emotion, so their devotion often looks like taking your challenges seriously rather than making grand romantic gestures. Give them a partner who values directness and independence and they\'re steadfast for life.' },
+          { title: 'NF Idealists (INFJ, INFP, ENFJ, ENFP) — love as a soul connection', text: 'The romantics of the system. They crave depth, authenticity, and a partner who truly "gets" them, and they express love through emotional intensity and devotion. Their risk is idealizing partners and feeling let down by ordinary reality. At their best, they love with a depth few others reach.' },
+          { title: 'SJ Guardians (ISTJ, ISFJ, ESTJ, ESFJ) — love as commitment and care', text: 'They show love through reliability, loyalty, and practical acts of service — remembering what you need, keeping their word, building a stable life. They value tradition and security over spontaneity, and their steady devotion is the quiet backbone of many lasting marriages.' },
+          { title: 'SP Explorers (ISTP, ISFP, ESTP, ESFP) — love as shared experience', text: 'They connect in the present through fun, adventure, and physical presence rather than long talks about the future. They\'re spontaneous, generous, and hands-on, showing love by doing things together. They can resist heavy planning, but they bring vitality and playfulness to a relationship.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🔗',
+        title: 'Complement or Match? And a Few Classic Pairings',
+        content: [
+          'There are two schools of thought on compatibility. "Complementary" pairings balance each other — a planner with a free spirit, a talker with a listener — and each covers the other\'s blind spots. "Similar" pairings share values and wavelength, so they understand each other easily but may reinforce the same weaknesses.',
+          'In practice, the happiest couples tend to share the deep things (values, and often the S/N wavelength that governs how you communicate) while differing enough elsewhere to keep each other growing. A few pairings show up again and again:',
+        ],
+        subsections: [
+          { title: 'INTJ x ENFP', text: 'A beloved match. The ENFP\'s warmth and spontaneity draws out the reserved INTJ, while the INTJ gives the scattered ENFP grounding and focus. Shared intuition means they speak the same idea-language; opposite energy and feeling styles keep it alive.' },
+          { title: 'INFJ x ENTP', text: 'The classic "mind-meld." The ENTP\'s playful debate energizes the INFJ, and the INFJ\'s depth gives the ENTP something real to anchor to. Both intuitive, both in love with ideas — a deep intellectual and emotional spark.' },
+          { title: 'ISTJ x ESFP', text: 'Stability meets spark. The ESFP brings fun and spontaneity to the dependable ISTJ; the ISTJ brings security and structure to the free-wheeling ESFP. Shared Sensing keeps them grounded in the same reality.' },
+          { title: 'Similar-type pairings (e.g. INFP x INFP)', text: 'Two of a kind understand each other instantly and share a wavelength few others reach — but they may both avoid conflict, both drift into idealism, and both leave the same practical gaps unfilled. Deep harmony, shared blind spots.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '💫',
+        title: 'Type Is a Guide, Not Your Destiny',
+        content: [
+          'Before you screen a partner by four letters, remember what MBTI can and can\'t do. It can illuminate why you and someone else give and receive love differently, and where you\'ll likely need to translate. It cannot predict whether you\'ll be happy together — because the things that actually make relationships last cut across every type.',
+          'Every pairing on earth can work, and every pairing can fail. What decides it isn\'t compatibility on paper; it\'s emotional maturity, shared values, communication, and the willingness to understand a person whose inner wiring differs from yours. The "wrong" type who does that work will out-love the "perfect" match who doesn\'t.',
+          'Use type as a map for understanding your partner, never as a verdict on your future. Curious where you fall on the map?',
+        ],
+        cta: true,
+        footer: 'The best relationship isn\'t between two compatible types. It\'s between two people willing to learn each other\'s language and keep speaking it, long after the novelty wears off.',
+      },
+    ],
+  },
+  {
+    slug: 'cognitive-functions-guide',
+    title: 'Cognitive Functions Matter More Than the Four Letters — A Real MBTI Guide',
+    description: 'Your MBTI type is more than E/I, S/N, T/F, J/P. What truly shapes you are cognitive functions — eight mental processes that combine into 16 unique personalities.',
+    date: '2026-07-11',
+    readTime: '8 min read',
+    heroIcon: '🧠',
+    sections: [
+      {
+        icon: '🧠',
+        title: 'Why the Four Letters Are Only Half the Story',
+        content: [
+          'Most people meet MBTI as four letters — I/E, S/N, T/F, J/P — and stop there. It\'s a useful shorthand, but it hides the machinery underneath, and that\'s why so many people feel their type description is "sort of right but not quite."',
+          'Here\'s the problem the letters create: they make it look like INTJ and INTP differ by a single trait (J vs P), so they must be nearly identical. In reality, those two types share almost none of the same mental wiring. The letters are the label on the box; the cognitive functions are what\'s actually inside.',
+          'Carl Jung — whose work MBTI is built on — never described people in four letters. He described mental processes: distinct ways the mind takes in information and makes decisions. Understanding those is what turns MBTI from a horoscope into an actual model of how you think.',
+        ],
+        footer: 'The four letters tell you what a type looks like from outside. The cognitive functions tell you how it actually works inside — and that\'s where the real insight lives.',
+      },
+      {
+        icon: '⚙️',
+        title: 'The Eight Cognitive Functions',
+        content: ['There are eight functions — four ways of taking in information (perceiving) and four ways of deciding (judging). Each comes in an inward (Introverted) and an outward (Extraverted) form.'],
+        subsections: [
+          { title: 'Ni — Introverted Intuition', text: 'Synthesizes information into deep patterns and a single vision of where things are heading. Future-focused, convergent, "I just know how this plays out." (Dominant in INTJ, INFJ.)' },
+          { title: 'Ne — Extraverted Intuition', text: 'Explodes outward into possibilities, connections, and "what if." Sees many paths at once and loves brainstorming and novelty. (Dominant in ENTP, ENFP.)' },
+          { title: 'Si — Introverted Sensing', text: 'Anchors to past experience, detail, and reliable memory. Values consistency, tradition, and what has proven to work. (Dominant in ISTJ, ISFJ.)' },
+          { title: 'Se — Extraverted Sensing', text: 'Lives fully in the present sensory moment — alert, hands-on, and responsive to what\'s happening right now. (Dominant in ESTP, ESFP.)' },
+          { title: 'Ti — Introverted Thinking', text: 'Builds a precise internal framework of logic, seeking consistency and accuracy. Takes ideas apart to understand exactly how they work. (Dominant in INTP, ISTP.)' },
+          { title: 'Te — Extraverted Thinking', text: 'Organizes the outer world efficiently — systems, metrics, plans, results. Cares about what objectively works and gets done. (Dominant in ENTJ, ESTJ.)' },
+          { title: 'Fi — Introverted Feeling', text: 'A deep, private compass of personal values and authenticity. Asks "does this align with who I am and what I believe is right?" (Dominant in INFP, ISFP.)' },
+          { title: 'Fe — Extraverted Feeling', text: 'Tuned to others\' emotions and group harmony. Reads the room, cares how everyone feels, and seeks connection and consensus. (Dominant in ENFJ, ESFJ.)' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🗂️',
+        title: 'The Function Stack: Your Mental Hierarchy',
+        content: [
+          'You don\'t use all eight functions equally. Each type has a "stack" — an ordered top four that runs from most natural to most awkward. This order, far more than the letters, is what makes each type distinct.',
+        ],
+        subsections: [
+          { title: 'Dominant — your superpower', text: 'The function you lead with, effortless and automatic, the core of how you operate. It\'s so natural you barely notice it\'s a "style" at all — it just feels like being you.' },
+          { title: 'Auxiliary — your right hand', text: 'The strong supporting function that balances the dominant. If your dominant takes in information, your auxiliary makes decisions (or vice versa), and it keeps you from being one-dimensional.' },
+          { title: 'Tertiary — the developing one', text: 'Weaker and more childlike, it strengthens with maturity. In youth it can be a source of insecurity or overcompensation; in midlife it often becomes a source of balance and play.' },
+          { title: 'Inferior — your blind spot', text: 'The least developed function, your area of stress and vulnerability. Under pressure it can hijack you and show up in immature ways — but consciously developing it is a lifelong growth edge.' },
+        ],
+        footer: 'Read your type as a stack, not four traits, and suddenly the contradictions make sense: why you\'re brilliant in one area and strangely clumsy in another, and where your growth actually lies.',
+      },
+      {
+        icon: '🔬',
+        title: 'INTJ vs ENFP: Same Letters Reversed, Opposite Minds',
+        content: ['The fastest way to feel how much functions matter is to compare two types by their stacks rather than their letters. Take INTJ and ENFP — often paired romantically precisely because their inner wiring mirrors each other.'],
+        subsections: [
+          { title: 'INTJ: Ni → Te → Fi → Se', text: 'Leads with Introverted Intuition (a single deep vision of the future), executes with Extraverted Thinking (systems and results), holds private values with Fi, and is weakest at Se (living in the raw present moment). The result: a strategic, focused, future-building mind.' },
+          { title: 'ENFP: Ne → Fi → Te → Si', text: 'Leads with Extraverted Intuition (a fountain of possibilities and connections), steered by Introverted Feeling (a strong personal value compass), supported by Te, and weakest at Si (routine, detail, and consistency). The result: an exploratory, warm, idea-generating mind.' },
+          { title: 'Why they attract', text: 'Their top functions are complementary opposites: the INTJ\'s converging Ni-Te loves the ENFP\'s expansive Ne, and each covers the other\'s inferior function — the ENFP pulls the INTJ into the present, the INTJ helps the ENFP finish what they start. Same four letters, differently arranged, produce two minds that fit like puzzle pieces.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🧭',
+        title: 'What Knowing Your Functions Actually Does for You',
+        content: [
+          'This isn\'t trivia. Understanding your function stack changes how you see yourself in concrete ways.',
+          'It explains your contradictions — why you\'re powerful in your dominant function and oddly weak in your inferior. It shows you a real growth path, because development means consciously strengthening your lower functions rather than just leaning harder on your best one. And it dissolves a lot of relationship conflict: when you see that someone leads with Fe where you lead with Ti, "why do they react like that?" turns into "oh, they\'re running a different function first."',
+        ],
+        bullets: [
+          { text: 'Self-understanding', desc: ' — your strengths and blind spots stop looking random and start forming a coherent pattern' },
+          { text: 'A concrete growth map', desc: ' — maturity is developing your tertiary and inferior functions, not perfecting your dominant one' },
+          { text: 'Better relationships', desc: ' — you can see the function behind a behavior instead of taking the behavior personally' },
+          { text: 'Accurate typing', desc: ' — functions are how you tell apart look-alike types that share three letters but almost no wiring' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '💡',
+        title: 'Go Past the Label, Meet the Machinery',
+        content: [
+          'The four letters are a fine front door. But if you stop there, MBTI stays a set of flattering adjectives you either believe or don\'t. Step through into the cognitive functions and it becomes something far more useful: a genuine model of how your particular mind takes in the world and decides what to do about it.',
+          'Learn your dominant function first — it\'s the one that feels so obvious it\'s invisible. Then trace the rest of your stack, and watch your own patterns click into place. Not sure of your type yet? Start there, then read it as a stack rather than a label.',
+        ],
+        cta: true,
+        footer: 'Your type was never four letters. It\'s eight mental processes in a particular order — and understanding that order is the difference between a fun quiz result and actually understanding yourself.',
+      },
+    ],
+  },
 ];
 
 export default mbtiBlogPostsEn;

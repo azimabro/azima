@@ -624,6 +624,221 @@ const blogPostsEn = [
       { icon: '✅', title: 'Take Both for Fuller Self-Knowledge', content: ['They are complementary, not competing.'], cta: true, footer: '' },
     ],
   },
+  {
+    slug: 'hsp-male-experience',
+    title: 'The HSP Man — When You Are Told You Are "Too Sensitive" for a Man',
+    description: 'Under the weight of "man up" culture, growing up as a highly sensitive male is a silent battle. This article is for every man who ever felt he was not "masculine enough."',
+    date: '2026-07-11',
+    readTime: '7 min read',
+    heroIcon: '🦁',
+    sections: [
+      {
+        icon: '💪',
+        title: 'The Impossible Script: "Real Men Don\'t Feel Too Much"',
+        content: [
+          'From the moment a boy can walk, the messages start arriving. Don\'t cry. Toughen up. Stop being so soft. Be a man about it. By the time he\'s grown, the script is fully installed: a real man is stoic, unshakable, and never overwhelmed.',
+          'Now imagine being born with a nervous system that feels everything deeply — that tears up at a piece of music, that senses the tension in a room before anyone speaks, that needs quiet after a long day. Roughly 30% of highly sensitive people are men, which means millions of boys grow up carrying a trait that culture has told them, in a hundred small ways, they are not allowed to have.',
+          'This is the particular loneliness of the highly sensitive man. It isn\'t that he feels too much. It\'s that he was handed a definition of masculinity with no room in it for who he actually is.',
+        ],
+        footer: 'High sensitivity is not the opposite of masculinity. The idea that it is comes from culture, not biology — and it\'s a story that has quietly cost sensitive men a great deal.',
+      },
+      {
+        icon: '👦',
+        title: 'What It Feels Like to Grow Up as a Sensitive Boy',
+        content: [
+          'The highly sensitive boy usually learns early that his inner world is a liability. He notices the consequences of showing it fast — and starts hiding.',
+        ],
+        subsections: [
+          { title: 'He learns to perform', text: 'He watches how the other boys act — louder, rougher, more indifferent — and he copies it. He builds an outer shell that passes inspection while the real, feeling self goes underground. Many sensitive men spend decades this way, fluent in a masculinity they never actually felt.' },
+          { title: 'He gets called the wrong words', text: 'Sensitive, shy, weak, soft, "too much." Rarely is the trait named accurately. So the boy concludes something is wrong with him, rather than understanding he simply processes the world more deeply than most.' },
+          { title: 'He carries it alone', text: 'Girls are often given at least some permission to be sensitive; boys are frequently given none. So the sensitive boy rarely has language for his experience and almost never has a peer who admits to sharing it. The result is a private, unspoken conviction: I am the only one like this.' },
+        ],
+        footer: 'None of this means the sensitivity was a problem. It means the boy was never given an accurate mirror — only a distorted one that told him his greatest depth was a defect.',
+      },
+      {
+        icon: '💎',
+        title: 'The Hidden Strengths of the Highly Sensitive Man',
+        content: ['Once a sensitive man stops fighting his wiring, the very traits he was taught to hide turn out to be some of his greatest assets.'],
+        subsections: [
+          { title: 'Depth of thought', text: 'He doesn\'t skate across the surface. He processes deeply, sees consequences others miss, and brings unusual thoughtfulness to problems, decisions, and creative work. In a world of quick reactions, his considered judgment is rare and valuable.' },
+          { title: 'Emotional intelligence', text: 'He reads people with startling accuracy — the shift in a friend\'s voice, the thing a partner isn\'t saying, the mood of a whole team. This makes him an extraordinary listener, partner, father, and leader, precisely because he perceives what most men are trained to overlook.' },
+          { title: 'Creativity and vision', text: 'Rich inner life, aesthetic sensitivity, and deep feeling are the raw materials of art, design, writing, and invention. A great many of the men who have moved us most were almost certainly highly sensitive — they simply turned their intensity into something the rest of us could feel.' },
+        ],
+        footer: 'These aren\'t consolation prizes for being sensitive. They\'re direct products of it. The same wiring that made childhood hard is the source of a sensitive man\'s deepest competence.',
+      },
+      {
+        icon: '🌱',
+        title: 'Confidence Without Betraying Yourself',
+        content: [
+          'The goal for a highly sensitive man is not to "toughen up" and bury the trait. Nor is it to swing the other way and let every stimulus knock him over. It\'s to build genuine confidence while staying fully sensitive.',
+          'That confidence comes from a quiet reframe: sensitivity is not the absence of strength — it is a different form of it. Real strength is a man who feels deeply and still shows up, who is moved to tears and still stands firm, who knows his own limits and honors them without apology.',
+        ],
+        bullets: [
+          { text: 'Redefine strength on your own terms', desc: ' — steadiness, depth, and integrity are strength; unfeeling hardness is just armor' },
+          { text: 'Protect your energy without shame', desc: ' — needing quiet to recharge is maintenance, not weakness, and you don\'t owe anyone an apology for it' },
+          { text: 'Find the men who get it', desc: ' — even one friend who shares the wiring dismantles the lie that you\'re the only one' },
+          { text: 'Channel the intensity', desc: ' — pour the depth of feeling into work, creativity, relationships, and purpose instead of spending your life suppressing it' },
+        ],
+        footer: 'The most grounded sensitive men aren\'t the ones who beat the trait into submission. They\'re the ones who stopped apologizing for it and learned to lead with it.',
+      },
+      {
+        icon: '✍️',
+        title: 'A Message for the Sensitive Man Reading This',
+        content: [
+          'If you\'ve spent your life being told you\'re too sensitive for a man, hear this clearly: there was never anything wrong with you. You were handed a definition of manhood too narrow to hold you, and you spent years believing the problem was you rather than the definition.',
+          'The tenderness you were taught to hide is the same tenderness that makes you a good father, a loyal partner, a real friend. The depth you were told to bury is the same depth that lets you create, understand, and love in a way many men never learn to.',
+          'You don\'t have to choose between being a man and being sensitive. You already are both — and the world needs far more men who are.',
+        ],
+        cta: true,
+        footer: 'You were never too much. You were simply never given a mirror wide enough to see all of who you are.',
+      },
+    ],
+  },
+  {
+    slug: 'hsp-digital-detox',
+    title: 'The HSP Digital Detox Guide — Your Phone Is Stealing Your Energy',
+    description: 'For HSPs, social media and infinite scrolling are the most insidious forms of overstimulation. A practical guide to reducing digital noise.',
+    date: '2026-07-11',
+    readTime: '6 min read',
+    heroIcon: '📱',
+    sections: [
+      {
+        icon: '📱',
+        title: 'The Overstimulation You Never See Coming',
+        content: [
+          'HSPs are often careful about obvious overstimulation — loud bars, crowded malls, chaotic offices. But there\'s one source most of us walk straight into for hours a day without noticing: the phone in our hand.',
+          'A single scroll session delivers hundreds of emotional hits, opinions, images, arguments, and comparisons in minutes — a firehose of stimulation aimed directly at the exact nervous system that processes everything more deeply. You can spend an afternoon "resting" on the couch with your phone and stand up more depleted than if you\'d gone to a party.',
+          'This isn\'t about willpower or being "addicted." It\'s that digital life is engineered to be maximally stimulating, and the HSP brain absorbs every drop of it.',
+        ],
+        footer: 'The screen is the one overstimulating environment you carry everywhere. For an HSP, learning to manage it isn\'t optional self-improvement — it\'s core nervous-system hygiene.',
+      },
+      {
+        icon: '🌊',
+        title: 'Why Social Media Hits HSPs Harder Than Anyone',
+        content: ['Everyone gets tired of their phone. But three specific mechanisms make the digital world uniquely draining for highly sensitive people.'],
+        subsections: [
+          { title: 'Emotional contagion at scale', text: 'HSPs absorb the emotions around them — and a feed is an endless stream of other people\'s emotions. Outrage, grief, envy, anxiety, joy, panic: you don\'t just read these, you feel them. Scroll for twenty minutes and you\'ve emotionally lived through a hundred strangers\' highs and lows. No nervous system was built to metabolize that.' },
+          { title: 'Information bombardment', text: 'Deep processing means you don\'t skim — you chew. Where an average brain lets most of a feed wash past, the HSP brain tries to actually process each headline, each hot take, each half-story. The volume is infinite; your capacity to digest it is not. The gap becomes overload.' },
+          { title: 'Comparison anxiety', text: 'HSPs already have a rich inner critic. Feed it a curated highlight reel of everyone else\'s best moments and it goes into overdrive — everyone seems more successful, more social, more settled. You know intellectually it\'s edited, but your sensitive emotional system reacts to it as if it were real.' },
+        ],
+        footer: 'Combine emotional contagion, information overload, and comparison anxiety, and you have a machine almost perfectly designed to exhaust a highly sensitive person — one they willingly hold for hours a day.',
+      },
+      {
+        icon: '🚨',
+        title: 'Signs Your Digital Load Is Already Too High',
+        content: ['Digital overload creeps in quietly. Watch for these signals that your screen time has tipped from useful into draining:'],
+        bullets: [
+          { text: 'You feel drained after scrolling, not rested', desc: ' — you reach for the phone to relax and put it down more tense than before' },
+          { text: 'A low-grade anxiety you can\'t place', desc: ' — a background hum of unease that tends to spike right after time online' },
+          { text: 'Fractured attention', desc: ' — you can\'t read a page or watch a scene without reaching for a second screen' },
+          { text: 'Comparison spirals', desc: ' — you close an app feeling behind, less-than, or vaguely dissatisfied with your own life' },
+          { text: 'Phantom reaching', desc: ' — your hand goes for the phone in every quiet moment, before you\'ve even decided to' },
+        ],
+        footer: 'If several of these sound familiar, the issue isn\'t that you\'re weak-willed. It\'s that a sensitive nervous system and an infinite feed are a genuinely bad match — and the mismatch is quietly taxing you every day.',
+      },
+      {
+        icon: '🛠️',
+        title: '5 Strategies That Actually Reduce the Noise',
+        content: ['You don\'t need to throw your phone in a lake. You need a handful of changes that cut the overstimulation without cutting the genuinely useful parts of digital life.'],
+        subsections: [
+          { title: '1. Kill the notifications', text: 'Turn off nearly every push notification — social, news, shopping, all of it. Notifications are interruptions engineered to yank a reactive nervous system back to the screen dozens of times a day. Keep only what a real human needs to reach you with, like calls and messages from actual people. This one change alone quiets a startling amount of background stress.' },
+          { title: '2. Schedule real offline windows', text: 'Protect specific phone-free blocks: the first hour after waking, the last hour before bed, and mealtimes. Charge the phone outside the bedroom. These aren\'t deprivation — they\'re the quiet gaps your nervous system needs to actually reset instead of being pinged awake.' },
+          { title: '3. Curate ruthlessly', text: 'Your feed is a diet, and you choose the ingredients. Unfollow or mute anything that reliably leaves you anxious, envious, or outraged — no matter how "important" it feels. Follow fewer accounts, and only ones that inform, calm, or genuinely delight you. A small, intentional feed beats an infinite, agitating one every time.' },
+          { title: '4. Add friction', text: 'Make mindless use slightly harder. Delete the worst apps off your phone and use them only in a browser. Move them off your home screen. Set app timers. Switch the screen to grayscale. Every extra step you add is a moment where the automatic reach becomes a conscious choice.' },
+          { title: '5. Replace, don\'t just remove', text: 'A vacuum gets refilled by old habits, so pre-decide what the reclaimed time is for: a book, a walk, an instrument, time outside, a real conversation. HSPs restore best through low-stimulation, single-focus activities — exactly what the phone was crowding out.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🌿',
+        title: 'Building a Digital Life You Can Sustain',
+        content: [
+          'The goal isn\'t a dramatic 30-day cleanse followed by a full relapse. It\'s a quieter, permanent relationship with your devices — one built around your actual wiring rather than the app designers\' incentives.',
+          'Think of it as tuning the volume rather than cutting the signal. You still get the connection, information, and creativity the digital world offers; you just stop letting it run at a level that overwhelms the sensitive system taking it all in.',
+          'Start with one change — the notifications are the highest-leverage place to begin — and let the calm you feel become its own motivation. If you want to understand exactly how much recovery your particular nervous system needs to protect —',
+        ],
+        cta: true,
+        footer: 'Your attention and your energy are finite and precious. Spending them on purpose, instead of surrendering them to a feed, is one of the kindest things a highly sensitive person can do for themselves.',
+      },
+    ],
+  },
+  {
+    slug: 'hsp-creativity',
+    title: 'HSP and Creativity — Why Highly Sensitive People Are Natural Artists',
+    description: 'Deep processing, rich emotions, and aesthetic sensitivity are the triple engine of creativity — and HSPs have all three. Why sensitive people are drawn to creative work.',
+    date: '2026-07-11',
+    readTime: '6 min read',
+    heroIcon: '🎨',
+    sections: [
+      {
+        icon: '🎨',
+        title: 'Why So Many Sensitive People End Up Making Things',
+        content: [
+          'Ask a room of writers, painters, musicians, and designers about their childhoods, and a striking pattern emerges: an unusual number describe themselves the way HSPs do. Overwhelmed easily. Moved deeply. Noticing what others walked past. Feeling like too much and not enough at the same time.',
+          'That\'s not a coincidence. The very traits that make high sensitivity difficult in a loud, fast world are the same traits that make creative work possible. Creativity isn\'t a mysterious gift that lands on a lucky few — it runs on specific raw materials, and HSPs are unusually rich in every one of them.',
+        ],
+        footer: 'If you\'ve always felt drawn to make things — to write, draw, compose, design, build — it may not be a random hobby. It may be your nervous system doing exactly what it\'s built to do.',
+      },
+      {
+        icon: '⚙️',
+        title: 'The Triple Engine of the Creative Mind',
+        content: ['Creativity rests on three capacities in particular — and high sensitivity supplies all three at once.'],
+        subsections: [
+          { title: 'Deep processing — the raw material', text: 'Creativity is really about making unexpected connections between ideas. Because HSPs process everything more deeply — turning experiences over, linking them to memories, following them down unexpected paths — they naturally accumulate a dense web of associations to draw from. The deep processing that tires you at a party is the same engine that generates original ideas in the studio.' },
+          { title: 'Rich emotion — the fuel', text: 'Art that moves people is made by people who were first moved themselves. HSPs feel with unusual intensity and range, which gives creative work its emotional truth. You can\'t fake the feeling in a great song or story — and the sensitive artist has more of it, at higher resolution, to pour in.' },
+          { title: 'Aesthetic sensitivity — the eye', text: 'HSPs notice subtlety everywhere: the exact shade, the slightly-off note, the word that isn\'t quite right, the detail that completes a scene. This fine-grained perception is precisely what separates competent work from beautiful work. Where others see "good enough," the sensitive maker sees the small adjustment that makes it sing.' },
+        ],
+        footer: 'Deep processing, rich emotion, and aesthetic sensitivity — the three drivers of creativity are the three defining features of high sensitivity. For an HSP, the capacity to create isn\'t borrowed. It\'s built in.',
+      },
+      {
+        icon: '🖼️',
+        title: 'The Artists Who Almost Certainly Shared Your Wiring',
+        content: ['We can\'t retroactively test anyone, but the writings, letters, and lives of many celebrated creators describe the HSP experience almost word for word — overwhelmed by the world, and transforming that intensity into art.'],
+        bullets: [
+          { text: 'Vincent van Gogh', desc: ' — a painter of almost unbearable emotional intensity, who felt color and feeling so vividly that his canvases still vibrate with it more than a century later' },
+          { text: 'Franz Kafka', desc: ' — hypersensitive to noise, crowds, and his own inner turmoil, he turned a lifetime of feeling out of place into some of literature\'s most haunting work' },
+          { text: 'Virginia Woolf', desc: ' — her writing captured the flicker of inner experience with a precision only a deeply sensitive perceiver could manage, even as that same sensitivity made the world hard to bear' },
+          { text: 'Countless musicians and poets', desc: ' — the composers and writers whose work reaches straight into us tend to be exactly the people who felt everything too much to keep it inside' },
+        ],
+        footer: 'The through-line isn\'t suffering for its own sake. It\'s that a sensitive nervous system takes in the world at high intensity — and creative work is one of the healthiest ways ever devised to give that intensity somewhere to go.',
+      },
+      {
+        icon: '⚖️',
+        title: 'The Gift and the Cost of Being a Sensitive Creator',
+        content: ['High sensitivity is a genuine creative advantage — but it comes bundled with real challenges. Knowing both is what lets you sustain the work.'],
+        subsections: [
+          { title: 'The advantages', text: 'You bring emotional depth, originality of connection, and an eye for detail that\'s hard to teach. You care about the work at a level that shows. And because you feel your audience\'s experience so vividly, you instinctively make things that land emotionally rather than just technically.' },
+          { title: 'The challenges', text: 'The same sensitivity that fuels the work makes criticism cut deep, comparison sting sharply, and the noise of the "industry" exhausting. HSP creators are prone to perfectionism, to overwhelm at the business side of creative life, and to burning out from feeling everything so intensely for so long.' },
+          { title: 'The balance', text: 'The sustainable sensitive creator learns to protect the tender part that makes the work possible — guarding energy, limiting exposure to harsh feedback, and separating the vulnerable act of creating from the tougher act of sharing. You don\'t toughen up the sensitivity; you build a structure that lets it survive.' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '🌱',
+        title: 'Practical Advice for the HSP Artist',
+        content: ['If your sensitivity is your creative engine, then protecting and feeding it is your real job. A few principles help it last.'],
+        bullets: [
+          { text: 'Guard your creative energy', desc: ' — make things when your nervous system is fresh, not after a draining day has already emptied the tank' },
+          { text: 'Separate creating from critiquing', desc: ' — let the first draft be messy and unjudged; the sensitive inner critic can help later, but it kills the work if invited in too early' },
+          { text: 'Take feedback in small, chosen doses', desc: ' — you feel criticism intensely, so decide whose input you trust and protect yourself from the rest' },
+          { text: 'Turn overwhelm into material', desc: ' — the feelings that flood you aren\'t just a burden to manage; they\'re the exact substance your best work is made of' },
+          { text: 'Rest as part of the process', desc: ' — downtime isn\'t the opposite of productivity for an HSP; it\'s where the deep processing quietly does its work' },
+        ],
+        footer: '',
+      },
+      {
+        icon: '✨',
+        title: 'Your Sensitivity Was Always Meant to Make Something',
+        content: [
+          'If you\'ve spent your life feeling like the world was set a little too loud, here is a reframe worth keeping: that same dial that makes ordinary life intense is what lets you perceive, feel, and render the world in a way most people can\'t.',
+          'You were not built to skate across the surface. You were built to go deep — and creative work is where that depth becomes a gift to other people rather than a weight you carry alone.',
+          'Whatever your medium, the sensitivity is not in the way of your art. It is your art. If you want to see just how strongly that sensitive wiring runs in you —',
+        ],
+        cta: true,
+        footer: 'The world doesn\'t need you to feel less. It needs you to make something out of everything you feel — and you were built, precisely, to do exactly that.',
+      },
+    ],
+  },
 ];
 
 export default blogPostsEn;
