@@ -89,7 +89,7 @@ export default function ReportPage() {
 
         {/* Ad Banner */}
         <div className="px-5 mb-4">
-          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+          <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
         </div>
 
         {/* Section 5: Lifestyle */}

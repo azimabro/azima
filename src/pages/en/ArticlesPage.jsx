@@ -125,7 +125,7 @@ export default function ArticlesPage() {
         <div className="px-5 pb-8 space-y-4">{sections.map((s) => (<div key={s.id} id={s.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 scroll-mt-20"><h2 className="text-base font-bold text-gray-800 flex items-center gap-2 mb-3"><span className="text-xl">{s.icon}</span>{s.title}</h2><div className="text-sm text-gray-600 leading-relaxed space-y-3">{s.content.split('\n\n').map((p, i) => <p key={i} className="whitespace-pre-line">{p}</p>)}</div></div>))}</div>
         {/* Ad Banner */}
         <div className="px-5 mb-4">
-          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+          <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
         </div>
         <div className="px-5 pb-10 text-center"><div className="bg-primary/5 rounded-2xl p-6 border border-primary/10"><h3 className="text-base font-bold text-primary-dark mb-2">Ready to discover yourself?</h3><p className="text-sm text-gray-500 mb-4">3 minutes to understand your sensitivity score</p><Link to="/en/test" className="inline-block px-8 py-3 rounded-xl bg-primary text-white font-semibold active:scale-[0.98] transition-transform shadow-lg shadow-primary/25">Start Test →</Link></div></div>
       </div>

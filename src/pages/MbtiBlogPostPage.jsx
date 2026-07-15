@@ -141,7 +141,7 @@ export default function MbtiBlogPostPage() {
               <BlogSection section={section} />
               {i === 1 && (
                 <div className="px-0">
-                  <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+                  <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
                 </div>
               )}
             </React.Fragment>

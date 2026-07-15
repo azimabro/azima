@@ -116,7 +116,7 @@ export default function HomePage() {
 
         <div className="mt-6 space-y-3">
           <div className="mb-4">
-            <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+            <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
           </div>
           <Link to="/articles" className="block bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-4 border border-primary/10 active:scale-[0.99] transition-all">
             <div className="flex items-center gap-3">

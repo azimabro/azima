@@ -104,7 +104,7 @@ export default function MbtiHomePage() {
 
         <div className="mt-6 space-y-3">
           <div className="mb-4">
-            <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+            <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
           </div>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider pt-2 text-center">Featured Articles</h2>
           <Link to="/en/mbti/blog/mbti-overview" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">

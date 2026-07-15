@@ -135,7 +135,7 @@ export default function ResultPage() {
 
         {/* Ad Banner */}
         <div className="px-5 mt-4">
-          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+          <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />
         </div>
 
         {/* Deep Report CTA */}
