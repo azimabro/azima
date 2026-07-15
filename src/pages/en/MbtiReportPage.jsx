@@ -214,7 +214,7 @@ export default function MbtiReportPage() {
 
         {/* Ad Banner */}
         <div className="px-5 mb-4">
-          <AdBanner slot="1234567890" style={{ minHeight: '100px' }} />
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
         </div>
 
         {/* Share Button */}
