@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 import SeoHead, { Breadcrumb } from '../components/SeoHead';
+import AdBanner from '../components/AdBanner';
 
 function BlogSection({ section }) {
   return (
@@ -141,7 +142,14 @@ export default function BlogPostPage() {
         {/* Content */}
         <div className="px-5 pb-8 space-y-4 -mt-4">
           {post.sections.map((section, i) => (
-            <BlogSection key={i} section={section} />
+            <React.Fragment key={i}>
+              <BlogSection section={section} />
+              {i === 1 && (
+                <div className="px-0">
+                  <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
 

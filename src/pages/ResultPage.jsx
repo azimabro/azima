@@ -3,6 +3,7 @@ import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../da
 import RadarChart from '../components/RadarChart';
 import SharePoster from '../components/SharePoster';
 import SeoHead from '../components/SeoHead';
+import AdBanner from '../components/AdBanner';
 
 export default function ResultPage() {
   const location = useLocation();
@@ -130,6 +131,11 @@ export default function ResultPage() {
             level={level}
             dimScores={dimScores}
           />
+        </div>
+
+        {/* Ad Banner */}
+        <div className="px-5 mt-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
         </div>
 
         {/* Deep Report CTA */}

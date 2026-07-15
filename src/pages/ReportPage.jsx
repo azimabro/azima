@@ -11,6 +11,7 @@ import {
 } from '../data/reportContent';
 import RadarChart from '../components/RadarChart';
 import SeoHead from '../components/SeoHead';
+import AdBanner from '../components/AdBanner';
 
 function getLevelKey(totalScore) {
   if (totalScore >= 80) return 'high';
@@ -248,6 +249,11 @@ export default function ReportPage() {
             </div>
           </div>
         )}
+
+        {/* Ad Banner */}
+        <div className="px-5 mb-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+        </div>
 
         {/* ============ SECTION 5: 生活方式建议 ============ */}
         <div className="px-5 mb-4">

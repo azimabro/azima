@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SeoHead, { FAQSchema } from '../components/SeoHead';
+import AdBanner from '../components/AdBanner';
 
 const sections = [
   {
@@ -290,6 +291,11 @@ export default function ArticlesPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Ad Banner */}
+        <div className="px-5 mb-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
         </div>
 
         {/* CTA */}

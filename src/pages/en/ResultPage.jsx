@@ -3,6 +3,7 @@ import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../..
 import RadarChart from '../../components/RadarChart';
 import SharePoster from '../../components/SharePoster';
 import SeoHead from '../../components/SeoHead';
+import AdBanner from '../../components/AdBanner';
 
 export default function ResultPage() {
   const location = useLocation();
@@ -83,6 +84,11 @@ export default function ResultPage() {
         {/* Result Card */}
         <div className="px-5 mt-5">
           <SharePoster totalScore={totalScore} maxScore={maxScore} level={level} dimScores={dimScores} lang="en" />
+        </div>
+
+        {/* Ad Banner */}
+        <div className="px-5 mt-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
         </div>
 
         {/* Deep Report CTA */}

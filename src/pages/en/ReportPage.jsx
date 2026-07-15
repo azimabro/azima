@@ -4,6 +4,7 @@ import { calcTotalScore, calcDimensions, getScoreLevel, DIMENSIONS } from '../..
 import { LEVEL_INTERPRETATIONS, DIMENSION_REPORTS, getPatternAnalysis, BOOK_RECOMMENDATIONS, get30DayPlan, LIFESTYLE_ADVICE } from '../../data/reportContent.en';
 import RadarChart from '../../components/RadarChart';
 import SeoHead from '../../components/SeoHead';
+import AdBanner from '../../components/AdBanner';
 
 function getLevelKey(totalScore) { if (totalScore >= 80) return 'high'; if (totalScore >= 60) return 'midHigh'; if (totalScore >= 40) return 'mid'; return 'low'; }
 function getDimLevel(score) { if (score >= 65) return 'high'; if (score >= 40) return 'mid'; return 'low'; }
@@ -85,6 +86,11 @@ export default function ReportPage() {
 
         {/* Section 4: Patterns */}
         {patterns.length > 0 && (<div className="px-5 mb-4"><div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5"><SectionTitle icon="🧩">Your Sensitivity Patterns</SectionTitle><p className="text-xs text-gray-400 mb-4 leading-relaxed">How your dimensions interact to form your unique sensitivity profile.</p><div className="space-y-3">{patterns.map((p, i) => (<div key={i} className="bg-primary/5 rounded-xl p-4 border border-primary/10"><h4 className="text-sm font-bold text-primary-dark mb-1.5">{p.title}</h4><p className="text-xs text-gray-600 leading-relaxed">{p.body}</p></div>))}</div></div></div>)}
+
+        {/* Ad Banner */}
+        <div className="px-5 mb-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+        </div>
 
         {/* Section 5: Lifestyle */}
         <div className="px-5 mb-4"><div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5"><SectionTitle icon="🧭">Personalized Action Guides</SectionTitle>

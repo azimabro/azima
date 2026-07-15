@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import SeoHead from '../components/SeoHead';
+import AdBanner from '../components/AdBanner';
 
 export default function HomePage() {
   useEffect(() => {
@@ -114,6 +115,9 @@ export default function HomePage() {
         </div>
 
         <div className="mt-6 space-y-3">
+          <div className="mb-4">
+            <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
+          </div>
           <Link to="/articles" className="block bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-4 border border-primary/10 active:scale-[0.99] transition-all">
             <div className="flex items-center gap-3">
               <span className="text-2xl">📚</span>

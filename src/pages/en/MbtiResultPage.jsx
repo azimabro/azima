@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { calcScores, getType } from '../../data/mbtiQuestions.en';
 import mbtiTypes from '../../data/mbtiTypes.en';
 import SeoHead from '../../components/SeoHead';
+import AdBanner from '../../components/AdBanner';
 
 // Dimension display config
 const DIM_CONFIG = [
@@ -120,6 +121,11 @@ export default function MbtiResultPage() {
               </>
             )}
           </div>
+        </div>
+
+        {/* Ad Banner */}
+        <div className="px-5 mt-4">
+          <AdBanner slot="4455002909" style={{ minHeight: '100px' }} />
         </div>
 
         {/* Deep Report CTA */}
