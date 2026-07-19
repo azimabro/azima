@@ -19,6 +19,7 @@ const MbtiTestPage = lazy(() => import('./pages/MbtiTestPage'));
 const MbtiResultPage = lazy(() => import('./pages/MbtiResultPage'));
 const MbtiReportPage = lazy(() => import('./pages/MbtiReportPage'));
 const MbtiBlogPostPage = lazy(() => import('./pages/MbtiBlogPostPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
 const EnResultPage = lazy(() => import('./pages/en/ResultPage'));
 const EnReportPage = lazy(() => import('./pages/en/ReportPage'));
 const EnArticlesPage = lazy(() => import('./pages/en/ArticlesPage'));
@@ -29,6 +30,7 @@ const EnMbtiTestPage = lazy(() => import('./pages/en/MbtiTestPage'));
 const EnMbtiResultPage = lazy(() => import('./pages/en/MbtiResultPage'));
 const EnMbtiReportPage = lazy(() => import('./pages/en/MbtiReportPage'));
 const EnMbtiBlogPostPage = lazy(() => import('./pages/en/MbtiBlogPostPage'));
+const EnAboutPage = lazy(() => import('./pages/en/AboutPage'));
 
 const Loading = () => <div className="min-h-screen flex items-center justify-center bg-gray-50"><div className="text-gray-400 text-sm">Loading...</div></div>;
 
@@ -51,6 +53,7 @@ export default function App() {
         <Route path="/mbti/result" element={<Lazy><MbtiResultPage /></Lazy>} />
         <Route path="/mbti/report" element={<Lazy><MbtiReportPage /></Lazy>} />
         <Route path="/mbti/blog/:slug" element={<Lazy><MbtiBlogPostPage /></Lazy>} />
+        <Route path="/about" element={<Lazy><AboutPage /></Lazy>} />
         <Route path="/en" element={<EnHomePage />} />
         <Route path="/en/test" element={<EnTestPage />} />
         <Route path="/en/result" element={<Lazy><EnResultPage /></Lazy>} />
@@ -63,6 +66,7 @@ export default function App() {
         <Route path="/en/mbti/result" element={<Lazy><EnMbtiResultPage /></Lazy>} />
         <Route path="/en/mbti/report" element={<Lazy><EnMbtiReportPage /></Lazy>} />
         <Route path="/en/mbti/blog/:slug" element={<Lazy><EnMbtiBlogPostPage /></Lazy>} />
+        <Route path="/en/about" element={<Lazy><EnAboutPage /></Lazy>} />
       </Routes>
       </ErrorBoundary>
     </BrowserRouter>

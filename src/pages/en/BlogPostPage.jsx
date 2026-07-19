@@ -139,6 +139,26 @@ export default function BlogPostPage() {
           ))}
         </div>
 
+        {/* Editor's Note */}
+        <div className="px-5 mb-4">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100 p-5">
+            <h3 className="text-sm font-bold text-amber-800 mb-2">✍️ Editor's Note</h3>
+            <p className="text-xs text-amber-700 leading-relaxed">
+              This article draws on Dr. Elaine Aron's peer-reviewed research and the collective experience of the HSP community. As an HSP myself, I know there is a gap between "knowing" and "doing" — you do not need to change everything overnight. Start with one or two small changes, and that is already enough.
+            </p>
+          </div>
+        </div>
+
+        {/* References */}
+        <div className="px-5 mb-4">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+            <h3 className="text-sm font-bold text-gray-800 mb-2">📚 References</h3>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              This article draws primarily from Dr. Elaine Aron's <em>The Highly Sensitive Person</em> (1996), Aron & Aron (1997) in the <em>Journal of Personality and Social Psychology</em>, and publicly available resources from The Highly Sensitive Person Foundation.
+            </p>
+          </div>
+        </div>
+
         <div className="px-5 pb-10 text-center">
           <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
             <div className="text-3xl mb-3">🦋</div>

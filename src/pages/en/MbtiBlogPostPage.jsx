@@ -147,6 +147,26 @@ export default function MbtiBlogPostPage() {
           ))}
         </div>
 
+        {/* Editor's Note */}
+        <div className="px-5 mb-4">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100 p-5">
+            <h3 className="text-sm font-bold text-amber-800 mb-2">✍️ Editor's Note</h3>
+            <p className="text-xs text-amber-700 leading-relaxed">
+              MBTI is a tool for self-understanding, not a box to limit who you can become. Your type describes your "factory settings," not the ceiling of your potential. If something in this article doesn't resonate with your experience — remember, you know yourself best.
+            </p>
+          </div>
+        </div>
+
+        {/* References */}
+        <div className="px-5 mb-4">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+            <h3 className="text-sm font-bold text-gray-800 mb-2">📚 References</h3>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              This article references Myers, I. B. & Myers, P. B. (1980) <em>Gifts Differing</em>, publicly available resources from the Isabel Briggs Myers Foundation, and broad community consensus within the MBTI discussion space.
+            </p>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="px-5 pb-10 text-center">
           <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">

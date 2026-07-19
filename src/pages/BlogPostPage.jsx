@@ -153,6 +153,26 @@ export default function BlogPostPage() {
           ))}
         </div>
 
+        {/* Editor's Note */}
+        <div className="px-5 mb-4">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100 p-5">
+            <h3 className="text-sm font-bold text-amber-800 mb-2">✍️ 编者按</h3>
+            <p className="text-xs text-amber-700 leading-relaxed">
+              本文基于 Elaine Aron 博士的学术研究和 HSP 社区的广泛讨论整理而成。作为一名高敏感者，我深知"知道"和"做到"之间的距离——你不需要在一夜之间改变所有习惯，从一两个小改变开始已经足够。如果你对本文有任何疑问或不同看法，欢迎通过你的方式参与讨论。
+            </p>
+          </div>
+        </div>
+
+        {/* References */}
+        <div className="px-5 mb-4">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+            <h3 className="text-sm font-bold text-gray-800 mb-2">📚 参考来源</h3>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              本文内容主要参考 Elaine Aron 博士的著作 <em>The Highly Sensitive Person</em> (1996)、Aron & Aron (1997) 发表于 <em>Journal of Personality and Social Psychology</em> 的原始论文，以及 The Highly Sensitive Person Foundation 的公开科普资源。
+            </p>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="px-5 pb-10 text-center">
           <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">

@@ -92,8 +92,23 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Bottom info cards */}
+      {/* Content Section - HSP科学解读 */}
       <div className="px-5 pb-8 max-w-lg mx-auto w-full">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-4">
+          <h2 className="text-base font-bold text-gray-800 mb-3">高敏感人格（HSP）是什么？</h2>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            高敏感人格（Highly Sensitive Person）是由美国心理学家 <strong>Elaine Aron 博士</strong>于 1990 年代提出的科学概念。它<strong>不是疾病或障碍</strong>，而是一种天生的神经系统特质——大约 15-20% 的人口天生就拥有更深入处理信息的神经系统。
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            进化生物学研究发现，这个比例在人类和 100 多种其他动物中惊人地一致。高敏感者被视为群体中的"哨兵"——能比其他人更早察觉环境变化和潜在风险，这对群体生存至关重要。
+          </p>
+          <div className="bg-primary/5 rounded-xl p-4 border border-primary/10">
+            <p className="text-xs text-primary-dark leading-relaxed">
+              <strong>💡 关键认知：</strong>敏感不是"玻璃心"，而是你的大脑以更高的分辨率处理信息。你的共情力、洞察力、深度思考能力和审美感知力，都是高敏感带来的独特优势。
+            </p>
+          </div>
+        </div>
+
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3 text-center">
           关于高敏感人格
         </h2>
@@ -156,6 +171,46 @@ export default function HomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
+          <Link to="/blog/how-to-live-with-hsp" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧘</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">高敏感者怎么活得更轻松？</h3>
+                <p className="text-xs text-gray-400 mt-0.5">感官管理、能量保护和日常实操指南</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/blog/hsp-vs-introvert" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🔄</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">高敏感 vs 内向：别搞混了</h3>
+                <p className="text-xs text-gray-400 mt-0.5">70% 高敏感者是内向者，但这是两个不同的概念</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+
+          <div className="pt-2">
+            <Link to="/articles" className="block text-sm text-primary text-center font-medium hover:text-primary-dark">
+              浏览全部 HSP 文章 →
+            </Link>
+          </div>
+
+          {/* Trust / About card */}
+          <div className="mt-6 bg-gradient-to-r from-gray-50 to-white rounded-2xl border border-gray-100 p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-2xl">📋</span>
+              <h3 className="text-sm font-bold text-gray-800">关于本站</h3>
+            </div>
+            <p className="text-xs text-gray-500 leading-relaxed mb-3">
+              本网站由一位高敏感者独立创建和维护。HSP 自测基于 Elaine Aron 博士原版量表汉化改编，经过 20+ 年学术验证。所有测试完全免费，数据存储在你的浏览器本地，不会上传或分享。
+            </p>
+            <Link to="/about" className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:text-primary-dark">
+              了解更多关于我们 →
+            </Link>
+          </div>
         </div>
 
       </div>

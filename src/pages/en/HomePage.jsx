@@ -91,8 +91,23 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Info cards */}
+      {/* Content Section */}
       <div className="px-5 pb-8 max-w-lg mx-auto w-full">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-4">
+          <h2 className="text-base font-bold text-gray-800 mb-3">What Is a Highly Sensitive Person (HSP)?</h2>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            The term Highly Sensitive Person (HSP) was coined by American psychologist <strong>Dr. Elaine Aron</strong> in the 1990s. It is <strong>not a disorder or illness</strong> — it is an innate nervous system trait. Approximately 15-20% of the population are born with a nervous system that processes information more deeply.
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            Evolutionary biologists have found this ratio consistently across over 100 animal species. HSPs are thought to serve as the group's "sentinels" — noticing environmental changes and potential risks before others — a trait crucial for group survival.
+          </p>
+          <div className="bg-primary/5 rounded-xl p-4 border border-primary/10">
+            <p className="text-xs text-primary-dark leading-relaxed">
+              <strong>💡 Key Insight:</strong> Sensitivity is not fragility — it means your brain processes information at a higher resolution. Your empathy, insight, deep thinking, and aesthetic appreciation are all unique strengths of being highly sensitive.
+            </p>
+          </div>
+        </div>
+
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3 text-center">
           About HSP
         </h2>
@@ -155,6 +170,46 @@ export default function HomePage() {
               <span className="text-gray-300 text-sm">→</span>
             </div>
           </Link>
+          <Link to="/en/blog/how-to-live-with-hsp" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧘</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">How to Live Well as an HSP</h3>
+                <p className="text-xs text-gray-400 mt-0.5">Sensory management, energy protection, and practical daily guide</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+          <Link to="/en/blog/hsp-vs-introvert" className="block bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 active:scale-[0.99] transition-all">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🔄</span>
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold text-gray-800">HSP vs Introvert — Not the Same Thing</h3>
+                <p className="text-xs text-gray-400 mt-0.5">70% of HSPs are introverts, but these are two distinct concepts</p>
+              </div>
+              <span className="text-gray-300 text-sm">→</span>
+            </div>
+          </Link>
+
+          <div className="pt-2">
+            <Link to="/en/articles" className="block text-sm text-primary text-center font-medium hover:text-primary-dark">
+              Browse All HSP Articles →
+            </Link>
+          </div>
+
+          {/* Trust / About card */}
+          <div className="mt-6 bg-gradient-to-r from-gray-50 to-white rounded-2xl border border-gray-100 p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-2xl">📋</span>
+              <h3 className="text-sm font-bold text-gray-800">About This Site</h3>
+            </div>
+            <p className="text-xs text-gray-500 leading-relaxed mb-3">
+              This site was independently built and is maintained by a highly sensitive person. The HSP self-test is adapted from Dr. Elaine Aron's original scale, validated by 20+ years of academic research. All tests are completely free, and your data stays on your device — nothing is uploaded or shared.
+            </p>
+            <Link to="/en/about" className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:text-primary-dark">
+              Learn More About Us →
+            </Link>
+          </div>
         </div>
       </div>
     </div>

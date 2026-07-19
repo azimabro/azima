@@ -148,6 +148,26 @@ export default function MbtiBlogPostPage() {
           ))}
         </div>
 
+        {/* Editor's Note */}
+        <div className="px-5 mb-4">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100 p-5">
+            <h3 className="text-sm font-bold text-amber-800 mb-2">✍️ 编者按</h3>
+            <p className="text-xs text-amber-700 leading-relaxed">
+              MBTI 是一个了解自我的工具，而不是限制自我的标签。你的类型描述的是你的"出厂偏好"，而不是你能成为什么样的人的上限。本文基于 Myers-Briggs 理论框架和社区讨论整理，如果其中某个描述不符合你的体验——记住，你才最了解你自己。
+            </p>
+          </div>
+        </div>
+
+        {/* References */}
+        <div className="px-5 mb-4">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+            <h3 className="text-sm font-bold text-gray-800 mb-2">📚 参考来源</h3>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              本文内容参考 Myers, I. B. & Myers, P. B. (1980) <em>Gifts Differing</em>、Isabel Briggs Myers Foundation 的公开资料，以及 MBTI 社群中的广泛讨论与共识。
+            </p>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="px-5 pb-10 text-center">
           <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
