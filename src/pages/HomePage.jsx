@@ -3,8 +3,14 @@ import { useEffect } from 'react';
 import SeoHead from '../components/SeoHead';
 import AdBanner from '../components/AdBanner';
 
+function isBot() {
+  const ua = (navigator.userAgent || '').toLowerCase();
+  return /googlebot|bingbot|baiduspider|yandexbot|duckduckbot|applebot|ahrefsbot|claudebot|claude-searchbot|mediapartners|yisouspider|petalbot|slurp|facebookexternalhit|twitterbot|bytespider/i.test(ua);
+}
+
 export default function HomePage() {
   useEffect(() => {
+    if (isBot()) return;
     if (sessionStorage.getItem('lang_checked')) return;
     sessionStorage.setItem('lang_checked', '1');
     try {
