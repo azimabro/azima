@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SeoHead from '../components/SeoHead';
 
 export default function PrivacyPage() {
@@ -9,7 +10,22 @@ export default function PrivacyPage() {
         canonical="https://haltsp.com/privacy"
       />
       <div className="min-h-screen bg-gray-50 page-enter">
-      <div className="max-w-lg mx-auto w-full px-5 py-8">
+      <div className="max-w-lg mx-auto w-full">
+        {/* Header */}
+        <div className="bg-white/90 backdrop-blur border-b border-gray-100 px-5 py-3 sticky top-0 z-10">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="text-gray-400 hover:text-gray-600 text-sm flex items-center gap-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              返回首页
+            </Link>
+            <span className="text-sm font-semibold text-gray-700">隐私政策</span>
+            <div className="w-10" />
+          </div>
+        </div>
+
+        <div className="px-5 py-8">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-gray-900">隐私政策</h1>
@@ -109,9 +125,10 @@ export default function PrivacyPage() {
           </section>
         </div>
 
-        {/* Footer */}
-        <div className="text-center mt-8 text-xs text-gray-400">
-          <p>本隐私政策可能会不时更新，更新后的政策将在本页面发布。</p>
+          {/* Footer */}
+          <div className="text-center mt-8 text-xs text-gray-400">
+            <p>本隐私政策可能会不时更新，更新后的政策将在本页面发布。</p>
+          </div>
         </div>
       </div>
     </div>

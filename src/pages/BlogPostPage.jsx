@@ -3,53 +3,7 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 import SeoHead, { Breadcrumb } from '../components/SeoHead';
 import AdBanner from '../components/AdBanner';
-
-function BlogSection({ section }) {
-  return (
-    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
-      <div className="text-2xl mb-3">{section.icon}</div>
-      <h2 className="text-base font-bold text-gray-800 mb-3">{section.title}</h2>
-      <div className="text-sm text-gray-600 leading-relaxed space-y-3">
-        {section.content?.map((p, i) => (
-          <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
-        ))}
-        {section.bullets && (
-          <ul className="space-y-2 mt-2">
-            {section.bullets.map((b, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="text-primary mt-0.5">•</span>
-                <span><strong className="text-gray-800">{b.text}</strong>{b.desc}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-        {section.subsections?.map((sub, i) => (
-          <div key={i}>
-            <h3 className="font-semibold text-gray-800 mb-1">{sub.title}</h3>
-            <p>{sub.text}</p>
-          </div>
-        ))}
-        {section.cta && (
-          <div className="bg-primary/5 rounded-xl p-4 border border-primary/10 text-center">
-            <p className="text-sm text-gray-700 mb-3">
-              基于 Elaine Aron 博士原版量表汉化<br />
-              <strong>23 题 · 3 分钟 · 四维度分析</strong>
-            </p>
-            <Link
-              to="/test"
-              className="inline-block px-6 py-2.5 bg-primary text-white rounded-xl font-semibold text-sm active:scale-[0.98] transition-transform"
-            >
-              开始免费测试 →
-            </Link>
-          </div>
-        )}
-        {section.footer && (
-          <p className="text-gray-800 font-medium">{section.footer}</p>
-        )}
-      </div>
-    </div>
-  );
-}
+import BlogSection from '../components/BlogSection';
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -143,7 +97,7 @@ export default function BlogPostPage() {
         <div className="px-5 pb-8 space-y-4 -mt-4">
           {post.sections.map((section, i) => (
             <React.Fragment key={i}>
-              <BlogSection section={section} />
+              <BlogSection section={section} ctaHtml="基于 Elaine Aron 博士原版量表汉化<br /><strong>23 题 · 3 分钟 · 四维度分析</strong>" ctaButton="开始免费测试 →" testPath="/test" />
               {i === 1 && (
                 <div className="px-0">
                   <AdBanner slot="4455002909" style={{ minHeight: '60px' }} />

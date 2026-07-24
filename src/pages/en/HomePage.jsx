@@ -2,11 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SeoHead from '../../components/SeoHead';
 import AdBanner from '../../components/AdBanner';
-
-function isBot() {
-  const ua = (navigator.userAgent || '').toLowerCase();
-  return /googlebot|bingbot|baiduspider|yandexbot|duckduckbot|applebot|ahrefsbot|claudebot|claude-searchbot|mediapartners|yisouspider|petalbot|slurp|facebookexternalhit|twitterbot|bytespider/i.test(ua);
-}
+import { isBot } from '../../utils/bot';
 
 export default function HomePage() {
   useEffect(() => {

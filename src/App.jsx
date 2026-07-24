@@ -31,6 +31,7 @@ const EnMbtiResultPage = lazy(() => import('./pages/en/MbtiResultPage'));
 const EnMbtiReportPage = lazy(() => import('./pages/en/MbtiReportPage'));
 const EnMbtiBlogPostPage = lazy(() => import('./pages/en/MbtiBlogPostPage'));
 const EnAboutPage = lazy(() => import('./pages/en/AboutPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 const Loading = () => <div className="min-h-screen flex items-center justify-center bg-gray-50"><div className="text-gray-400 text-sm">Loading...</div></div>;
 
@@ -67,6 +68,7 @@ export default function App() {
         <Route path="/en/mbti/report" element={<Lazy><EnMbtiReportPage /></Lazy>} />
         <Route path="/en/mbti/blog/:slug" element={<Lazy><EnMbtiBlogPostPage /></Lazy>} />
         <Route path="/en/about" element={<Lazy><EnAboutPage /></Lazy>} />
+        <Route path="*" element={<Lazy><NotFoundPage /></Lazy>} />
       </Routes>
       </ErrorBoundary>
     </BrowserRouter>
